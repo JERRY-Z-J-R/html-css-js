@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之后代选择器</title>
+    <style>
+        /* 把 ol 里面的小 li 选出来改为 pink */
+        ol li {
+            color: pink;
+        }
+
+        /* 把 ol 里面的小 a 选出来改为 red */
+        ol a {
+            color: red;
+        }
+
+        /* 把 ul 里面的小 li 选出来改为 green */
+        ul li {
+            color: green;
+        }
+
+        /* 把 nav 类中的 li 里面的 a 选出来改为 yellow */
+        .nav li a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>我是 ol 的孩子</li>
+        <li>我是 ol 的孩子</li>
+        <li>我是 ol 的孩子</li>
+        <li><a href="#">我是 ol 的孙子</a></li>
+    </ol>
+    <ul>
+        <li>我是 ul 的孩子</li>
+        <li>我是 ul 的孩子</li>
+        <li>我是 ul 的孩子</li>
+        <li><a href="#">我是 ul 的孙子，但是我不会变化</a></li>
+    </ul>
+    <ul class="nav">
+        <li><a href="#">我偏要变色！并且只能我一个人色……</a></li>
+    </ul>
+</body>
+
+</html>

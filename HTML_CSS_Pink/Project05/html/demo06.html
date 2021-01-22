@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之链接伪类选择器</title>
+    <style>
+        /* 注意：要学会触类旁通，这里不只是可以改变颜色，当链接为图片时还可以改图片 */
+        /* 1、a:link 把没有点击过的（访问过的）链接选出来 */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* 2、a:visited 选择点击过的（访问过的）链接选出来 */
+        a:visited {
+            color: orange;
+        }
+
+        /* 3、a:hover 选择鼠标经过（停留）的那个链接 */
+        a:hover {
+            color: skyblue;
+        }
+
+        /* 4、a:active 选择的是我们鼠标正在按下还没有弹起鼠标的那个链接 */
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">小猪佩奇</a>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS文本外观之文本装饰</title>
+    <style>
+        /* 默认为 none 没有装饰 */
+        div {
+            /* 上划线 几乎不用 */
+            /* text-decoration: overline; */
+            /* 删除线 不常用 */
+            /* text-decoration: line-through; */
+            /* 下划线 常用，链接 a 自带下划线 */
+            text-decoration: underline;
+        }
+
+        a {
+            /* 取消 a 默认的下划线 */
+            text-decoration: none;
+            color: #333333;
+        }
+    </style>
+</head>
+
+<body>
+    <div>粉红色的回忆</div>
+    <a href="http://jerry-z-j-r.github.io">JERRY</a>
+</body>
+
+</html>

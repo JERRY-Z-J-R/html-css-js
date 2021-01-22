@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS三大特性之继承性——行高的继承</title>
+    <style>
+        body {
+            color: pink;
+            /* font: 12px/24px; */
+            font: 12px/1.5;
+        }
+
+        div {
+            /* 子元素继承了父元素 body 的行高 1.5 */
+            /* 这个 1.5 就是当前元素文字大小 font-size 的 1.5 倍 所以当前 div 的行高就是 21px */
+            font-size: 14px;
+        }
+
+        p {
+            /* 1.5 * 16 = 24 当前行高 */
+            font-size: 16px;
+        }
+
+        /* li 没有手动指定文字大小，则会继承父亲（此处的父亲可以层层向上推）的文字大小  */
+        /* 即：body 12px 所有 li 的文字大小为 12px */
+        /* 当前 li 的行高就是 12 * 1.5 = 18  */
+    </style>
+</head>
+
+<body>
+    <div>周吉瑞</div>
+    <p>JERRY</p>
+    <ul>
+        <li>没有指定文字大小</li>
+    </ul>
+</body>
+
+</html>

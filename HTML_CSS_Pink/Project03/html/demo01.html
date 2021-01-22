@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS字体属性之字体系列</title>
+    <style>
+        /* 浏览器会从第一个字体开始进行适配，如果本机可以适配的话，那么就使用该字体，否则看下一个字体，
+        如果都不可以，那么浏览器会使用自带的默认字体，所以实际开发中一般建议使用比较标准化的字体 */
+        h2 {
+            /* font-family: '微软雅黑'; 可以使用中文，但不建议 */
+            font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JERRY的秘密</h2>
+    <p>姓名：周吉瑞</p>
+    <p>生日：2000年5月4日</p>
+    <p>性别：男</p>
+    <p>婚姻状况：单身</p>
+</body>
+
+</html>

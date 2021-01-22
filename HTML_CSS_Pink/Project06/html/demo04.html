@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS三大特性之优先级</title>
+    <style>
+        div {
+            color: pink;
+        }
+
+        .test {
+            color: red;
+        }
+
+        #demo {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test">你笑起来真好看</div> <!-- red -->
+    <div class="test" id="demo">你笑起来真好看</div> <!-- green -->
+    <div class="test" id="demo" style="color: blue;">你笑起来真好看</div> <!-- blue -->
+<!-- 
+    假如在 css 选择器 某一个属性值后面跟上 !important，那么这个属性一定会执行！
+    例如：div {
+             color: pink !important;  
+          }
+          ...
+    <div class="test" id="demo" style="color: blue;">你笑起来真好看</div> -- pink --
+-->
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>边框的复合写法</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            /* border-width: 5px;
+            border-style: solid;
+            background-color: pink; */
+            /* 边框的复合写法 简写： */
+            border: 5px solid pink;
+            /* 利用CSS层叠性将上边框单独覆盖 */
+            border-top: 5px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

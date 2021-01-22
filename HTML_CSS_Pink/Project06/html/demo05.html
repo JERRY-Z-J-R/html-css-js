@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS三大特性之优先级——注意问题</title>
+    <style>
+        /* 父亲的权重是 100 */
+        #father {
+            color: red !important;
+        }
+
+        /* p 继承的权重为 0 */
+        /* 所以以后我们看标签到底执行哪一个样式，就先看这个标签有没有直接被选出来 */
+        p {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 继承的权重是 0，如果该元素被直接选中，不管父元素权重多高，子元素得到的权重都是 0 -->
+    <div id="father">
+        <p>你还是很好看</p> <!-- pink -->
+    </div>
+    <!-- a 链接浏览器默认指定了一个样式，所以它不参与继承 -->
+    <a href="#">我是单独的样式</a>
+</body>
+
+</html>
