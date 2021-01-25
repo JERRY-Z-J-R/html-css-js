@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>边框的复合写法</title>
+    <title>盒子模型之边框的复合写法</title>
     <style>
         div {
             width: 300px;
             height: 200px;
-            /* border-width: 5px;
+            /* 
+            -- border-width 边框的粗细，一般情况下使用 px --
+            border-width: 5px;
+            -- border-width 边框的样式 solid 实线边框 dashed 虚线边框 dotted 点线边框 --
             border-style: solid;
-            background-color: pink; */
+            background-color: pink;
+            */
             /* 边框的复合写法 简写： */
             border: 5px solid pink;
             /* 利用CSS层叠性将上边框单独覆盖 */

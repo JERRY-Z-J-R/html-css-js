@@ -4,11 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>盒子模型之利用盒子模型改变表格的边框</title>
+    <style>
+        table {
+            width: 500px;
+            height: 249px;
+        }
+
+        th {
+            height: 35px;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid pink;
+            /* 合并相邻的边框, 如果不这样做，那么单元格边框会叠加变为两倍宽 */
+            border-collapse: collapse;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-
+    <!-- align cellspacing 的 CSS 方式修改后面再讨论 -->
+    <table align="center" cellspacing="0">
+        <thead>
+            <tr>
+                <th>12345</th>
+                <th>12345</th>
+                <th>12345</th>
+                <th>12345</th>
+                <th>12345</th>
+                <th>12345</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+                <td>12345</td>
+            </tr>
+    </table>
 </body>
 
 </html>
