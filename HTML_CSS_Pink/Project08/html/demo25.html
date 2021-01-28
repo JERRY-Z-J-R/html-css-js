@@ -4,22 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>清除浮动——为什么要清除浮动？</title>
-    <!-- 在非浮动的情况下，父盒子会被子盒子撑开，可以实现动态适配的效果 -->
+    <title>清除浮动——双伪元素</title>
     <style>
+        /* 本质原理其实是额外便签法的升级，
+        也是父元素overflow法的升级，
+        不但在最后添加了盒子，
+        在最前面也同样加了盒子，
+        此方法同样是在实际开发中比较高级和常用的方法 */
+        .clearfix::before,
+        .clearfix::after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix::after {
+            clear: both;
+        }
+
+        .clearfix {
+            /* 为了照顾低版本浏览器 */
+            /* IE6、7 专有 */
+            *zoom: 1;
+        }
+
         .box {
+            /* 清除浮动 */
+            overflow: hidden;
             width: 800px;
             border: 1px solid black;
             margin: 0 auto;
         }
 
         .first {
+            float: left;
             width: 300px;
             height: 200px;
             background-color: pink;
         }
 
         .second {
+            float: left;
             width: 200px;
             height: 200px;
             background-color: skyblue;
@@ -35,7 +59,7 @@
 </head>
 
 <body>
-    <div class="box">
+    <div class="box clearfix">
         <div class="first"></div>
         <div class="second"></div>
     </div>
