@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动的注意点</title>
+    <!-- 浮动的盒子只会影响浮动盒子后面的标准流，不会影响前面的标准流 -->
+    <style>
+        .box {
+            width: 900px;
+            height: 300px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .first {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+
+        }
+
+        /* 此时第二个盒子完全被第一个盒子盖住了 */
+        .second {
+            width: 200px;
+            height: 150px;
+            background-color: red;
+        }
+
+        /* 第三个盒子接在第二个盒子正下方，
+        但是由于浮动盒子不能遮挡浮动盒子所以第三个盒子靠边了 */
+        .third {
+            float: left;
+            width: 300px;
+            height: 240px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+    </div>
+</body>
+
+</html>
