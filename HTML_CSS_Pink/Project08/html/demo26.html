@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>清除浮动——:after伪元素</title>
+    <title>清除浮动——双伪元素</title>
     <style>
         /* 本质原理其实是额外便签法的升级，
-        在最后添加了盒子，
-        此方法是在实际开发中比较高级和常用的方法 */
-        .clearfix:after {
+        也是父元素overflow法的升级，
+        不但在最后添加了盒子，
+        在最前面也同样加了盒子，
+        此方法同样是在实际开发中比较高级和常用的方法 */
+        .clearfix::before,
+        .clearfix::after {
             content: "";
-            display: block;
-            height: 0;
+            display: table;
+        }
+
+        .clearfix::after {
             clear: both;
-            visibility: hidden;
         }
 
         .clearfix {

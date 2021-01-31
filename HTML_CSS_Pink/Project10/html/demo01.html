@@ -4,25 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>浮动</title>
+    <title>相对定位</title>
     <style>
-        .left,
-        .right {
-            float: left;
+        .box1 {
+            position: relative;
+            top: 100px;
+            left: 100px;
             width: 200px;
             height: 200px;
             background-color: pink;
         }
 
-        .right {
-            float: right;
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
         }
     </style>
 </head>
 
 <body>
-    <div class="left">左青龙</div>
-    <div class="right">右白虎</div>
+    <div class="box1"></div>
+    <div class="box2"></div>
 </body>
 
 </html>
