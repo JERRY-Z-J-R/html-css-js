@@ -29,7 +29,7 @@ a {
 .header {
     height: 42px;
     /* background-color: pink; */
-    /* 注意此地方会层叠 w 里面的margin */
+    /* 注意此地方会层叠 w 里面的 margin */
     margin: 30px auto;
 }
 .logo {
