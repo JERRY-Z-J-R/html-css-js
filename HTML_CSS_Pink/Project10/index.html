@@ -10,39 +10,53 @@
 </head>
 
 <body>
-    <!-- 1.头部区域开始啦 -->
+
+    <!-- 1.头部区域开始啦！ -->
     <div class="header w">
-        <!-- logo部分 -->
+
+        <!-- logo 部分 -->
         <div class="logo">
             <img src="images/logo.png" alt="">
         </div>
+
         <!-- 导航栏部分 nav -->
         <div class="nav">
+            <!-- 对于大量的链接堆叠来说：一定要将 a 放在列表中，这将能大大提高 SEO，
+                因为浏览器会将有大量链接堆叠的情况视为恶意增加链接，会自动将其降低排名， -->
             <ul>
                 <li><a href="#">首页</a></li>
                 <li><a href="#">课程</a></li>
                 <li><a href="#">职业规划</a></li>
             </ul>
         </div>
+
         <!-- 搜索模块 -->
+        <!-- 在实际开发中，搜索框不用 text 而是用 search，search 会自带按钮所以也不用再加 button -->
         <div class="search">
             <input type="text" value="输入关键词">
             <button></button>
         </div>
+
         <!-- 用户模块 -->
         <div class="user">
-            <img src="images/user.png" alt="">
-            qq-lilei
+            <!-- 此处，头像及名称直接丢到 div 中即可，两者之间有一个空格 -->
+            <img src="images/user.png" alt=""> qq-leishui
         </div>
     </div>
-    <!-- 头部区域结束啦 -->
-    <!-- 2. banner部分start -->
+    <!-- 头部区域结束啦！ -->
+    <!---->
+    <!---->
+    <!---->
+    <!-- 2. banner 部分开始啦！ -->
     <div class="banner">
+
         <!-- 版心 -->
         <div class="w">
+
+            <!-- 侧导航栏 -->
             <div class="subnav">
                 <ul>
-                    <li><a href="#">前端开发 <span> &gt; </span></a></li>
+                    <li><a href="#">前端开发 <span> &gt; </span> </a></li>
                     <li><a href="#">前端开发 <span> &gt; </span> </a></li>
                     <li><a href="#">前端开发 <span> &gt; </span> </a></li>
                     <li><a href="#">前端开发 <span> &gt; </span> </a></li>
@@ -56,7 +70,10 @@
 
             <!-- course 课程表模块 -->
             <div class="course">
+                <!-- 对于标题性质的文字优先使用 h 便签 -->
+                <!-- 对于标题下的文段内容优先使用 p 标签 -->
                 <h2>我的课程表</h2>
+                <!-- hd 指上面部分，bd 指下面部分 -->
                 <div class="bd">
                     <ul>
                         <li>
@@ -73,14 +90,19 @@
                         </li>
                     </ul>
 
+                    <!-- 有关展开栏，详细页用 more 修饰 -->
                     <a href="#" class="more">全部课程</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- banner部分end -->
-    <!-- 3.精品推荐模块开始 -->
+    <!-- banner 部分结束啦！ -->
+    <!---->
+    <!---->
+    <!---->
+    <!-- 3.精品推荐模块开始啦！ -->
     <div class="goods w">
+
         <h3>精品推荐</h3>
         <ul>
             <li><a href="#">jQuery</a></li>
@@ -89,15 +111,21 @@
             <li><a href="#">jQuery</a></li>
             <li><a href="#">jQuery</a></li>
         </ul>
+
         <a href="#" class="mod">修改兴趣</a>
     </div>
-    <!-- 精品推荐模块结束 -->
-    <!-- 4. box核心内容区域开始 -->
+    <!-- 精品推荐模块结束啦！ -->
+    <!---->
+    <!---->
+    <!---->
+    <!-- 4. box 核心内容区域开始啦！ -->
     <div class="box w">
+
         <div class="box-hd">
             <h3>精品推荐</h3>
             <a href="#">查看全部</a>
         </div>
+
         <div class="box-bd">
             <ul class="clearfix">
                 <li>
@@ -190,21 +218,25 @@
                         <span>高级</span> • 1125人在学习
                     </div>
                 </li>
-
             </ul>
         </div>
     </div>
-    <!-- 4. box核心内容区域结束 -->
-
-    <!-- 5. footer 模块制作 -->
+    <!-- 4. box核心内容区域结束啦！ -->
+    <!---->
+    <!---->
+    <!---->
+    <!-- 5. footer 模块制作开始啦！ -->
     <div class="footer">
+
+        <!-- 版心 -->
         <div class="w">
+
             <div class="copyright">
                 <img src="images/logo.png" alt="">
-                <p>学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。<br>
-                    © 2017年XTCG Inc.保留所有权利。-沪ICP备15025210号</p>
+                <p>学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。<br> © 2017年XTCG Inc.保留所有权利。-沪ICP备15025210号</p>
                 <a href="#" class="app">下载APP</a>
             </div>
+
             <div class="links">
                 <dl>
                     <dt>关于学成网</dt>

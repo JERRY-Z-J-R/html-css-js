@@ -1,87 +1,132 @@
+/* 将页面所有的内外边距置零 */
+
 * {
     margin: 0;
     padding: 0;
 }
+
+
+/* 设置版心大小，居中放置 */
+
 .w {
     width: 1200px;
     margin: auto;
 }
+
+
+/* 设置页面背景颜色 */
+
 body {
     background-color: #f3f5f7;
 }
+
+
+/* 除去所有 li 前的 符号 */
+
 li {
     list-style: none;
 }
+
+
+/* 除去所有链接的样式 */
+
 a {
     text-decoration: none;
 }
-.clearfix:before,.clearfix:after {
-    content:"";
-    display:table; 
-  }
-  .clearfix:after {
-    clear:both;
-  }
-  .clearfix {
-     *zoom:1;
-  }   
- 
+
+
+/* 双伪元素清除浮动 */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
 .header {
     height: 42px;
     /* background-color: pink; */
-    /* 注意此地方会层叠 w 里面的margin */
+    /* 注意此地方会层叠 w 里面的 margin */
+    /* 让 div 居中 */
     margin: 30px auto;
 }
+
 .logo {
     float: left;
     width: 198px;
     height: 42px;
 }
+
 .nav {
     float: left;
     margin-left: 60px;
 }
+
 .nav ul li {
     float: left;
     margin: 0 15px;
 }
+
 .nav ul li a {
+    /* a 行内元素转为块元素 */
     display: block;
     height: 42px;
     padding: 0 10px;
+    /* 让行高等于盒子的高度，实现居中效果 */
     line-height: 42px;
     font-size: 18px;
-    color: #050505;   
+    color: #050505;
 }
+
+
+/* 鼠标停留时改变样式 */
+
 .nav ul li a:hover {
     border-bottom: 2px solid #00a4ff;
     color: #00a4ff;
 }
+
+
 /* search搜索模块 */
+
 .search {
     float: left;
     width: 412px;
     height: 42px;
     margin-left: 70px;
 }
+
 .search input {
     float: left;
     width: 345px;
     height: 40px;
     border: 1px solid #00a4ff;
+    /* 右边框单独设置为 0 */
     border-right: 0;
     color: #bfbfbf;
     font-size: 14px;
+    /* 设置一定的内边距，可以使默认文字实现缩进效果 */
     padding-left: 15px;
 }
+
 .search button {
     float: left;
     width: 50px;
     height: 42px;
-    /* 按钮button默认有个边框需要我们手动去掉 */
+    /* 按钮 button 默认有个边框需要我们手动去掉 */
     border: 0;
+    /* 非带链接图片建议都采用背景图片设置，而非 img 标签 */
     background: url(images/btn.png);
 }
+
 .user {
     float: right;
     line-height: 42px;
@@ -89,44 +134,75 @@ a {
     font-size: 14px;
     color: #666;
 }
-/* banner区域 */
+
+
+/* banner 区域 */
+
 .banner {
     height: 421px;
     background-color: #1c036c;
 }
+
+
+/* 设置版心区域的大盒子 */
+
 .banner .w {
     height: 421px;
+    /* 实际上，此处的大轮播图是一个图片链接要用 img 标签来做，但是这里占时简化了 */
     background: url(images/banner2.png) no-repeat top center;
 }
+
+
+/* 侧边导航栏 */
+
 .subnav {
+    /* 左浮动 */
     float: left;
     width: 190px;
     height: 421px;
-    background: rgba(0,0,0, 0.3);
+    /* 半透明背景 */
+    background: rgba(0, 0, 0, 0.3);
 }
+
+
+/* 由于 li 是块元素，所以单独占一行，此处刚好合适，不用转换 */
+
 .subnav ul li {
     height: 45px;
     line-height: 45px;
     padding: 0 20px;
 }
+
 .subnav ul li a {
     font-size: 14px;
     color: #fff;
 }
+
 .subnav ul li a span {
+    /* 右浮动 */
     float: right;
 }
+
 .subnav ul li a:hover {
     color: #00a4ff;
 }
+
+
+/* 右侧课程信息栏 */
+
 .course {
+    /* 右浮动 */
     float: right;
     width: 230px;
     height: 300px;
     background-color: #fff;
     /* 浮动的盒子不会有外边距合并的问题 */
+    /* 浮动的盒子不会有外边距合并的问题 */
+    /* 浮动的盒子不会有外边距合并的问题 */
+    /* 重要的问题说三遍！！！ */
     margin-top: 50px;
 }
+
 .course h2 {
     height: 48px;
     background-color: #9bceea;
@@ -135,22 +211,28 @@ a {
     font-size: 18px;
     color: #fff;
 }
+
 .bd {
     padding: 0 20px;
 }
+
 .bd ul li {
     padding: 14px 0;
     border-bottom: 1px solid #ccc;
 }
+
 .bd ul li h4 {
     font-size: 16px;
     color: #4e4e4e;
 }
+
 .bd ul li p {
     font-size: 12px;
     color: #a5a5a5;
 }
+
 .bd .more {
+    /* 将 a 转化为块元素独占一行 */
     display: block;
     height: 38px;
     border: 1px solid #00a4ff;
@@ -161,51 +243,66 @@ a {
     font-size: 16px;
     font-weight: 700;
 }
+
+
 /* 精品推荐模块 */
+
 .goods {
     height: 60px;
     background-color: #fff;
     margin-top: 10px;
-    box-shadow: 0 2px 3px 3px rgba(0,0,0, 0.1);
-    /* 行高会继承， 会继承给3个孩子 */
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+    /* 行高会继承，会继承给3个孩子 */
     line-height: 60px;
 }
+
 .goods h3 {
     float: left;
     margin-left: 30px;
     font-size: 16px;
     color: #00a4ff;
 }
+
 .goods ul {
     float: left;
     margin-left: 30px;
 }
+
 .goods ul li {
     float: left;
 }
+
 .goods ul li a {
     padding: 0 30px;
     font-size: 16px;
     color: #050505;
     border-left: 1px solid #ccc;
 }
+
 .mod {
     float: right;
     margin-right: 30px;
     font-size: 14px;
     color: #00a4ff;
 }
+
+
+/* box 核心内容区域 */
+
 .box {
     margin-top: 30px;
 }
+
 .box-hd {
     height: 45px;
 }
+
 .box-hd h3 {
     float: left;
     font-size: 20px;
     color: #494949;
 }
+
 .box-hd a {
     float: right;
     font-size: 12px;
@@ -213,10 +310,14 @@ a {
     margin-top: 10px;
     margin-right: 30px;
 }
-/* 把li 的父亲ul 修改的足够宽一行能装开5个盒子就不会换行了 */
+
+
+/* 把 li 的父亲 ul 修改的足够宽，一行能装开 5 个盒子就不会换行了 */
+
 .box-bd ul {
     width: 1225px;
 }
+
 .box-bd ul li {
     float: left;
     width: 228px;
@@ -224,41 +325,52 @@ a {
     background-color: #fff;
     margin-right: 15px;
     margin-bottom: 15px;
-   
 }
+
 .box-bd ul li img {
+    /* 与父亲 li 一样宽 */
     width: 100%;
 }
+
 .box-bd ul li h4 {
     margin: 20px 20px 20px 25px;
     font-size: 14px;
     color: #050505;
     font-weight: 400;
 }
+
 .box-bd .info {
     margin: 0 20px 0 25px;
     font-size: 12px;
     color: #999;
 }
+
 .box-bd .info span {
     color: #ff7c2d;
 }
+
+
 /* footer 模块 */
+
 .footer {
     height: 415px;
     background-color: #fff;
 }
+
 .footer .w {
     padding-top: 35px;
 }
+
 .copyright {
     float: left;
 }
+
 .copyright p {
     font-size: 12px;
     color: #666;
     margin: 20px 0 15px 0;
 }
+
 .copyright .app {
     display: block;
     width: 118px;
@@ -269,18 +381,22 @@ a {
     color: #00a4ff;
     font-size: 16px;
 }
+
 .links {
     float: right;
 }
+
 .links dl {
     float: left;
     margin-left: 100px;
 }
+
 .links dl dt {
     font-size: 16px;
     color: #333;
     margin-bottom: 5px;
 }
+
 .links dl dd a {
     color: #333;
     font-size: 12px;
