@@ -11,10 +11,11 @@
             margin: 0;
             padding: 0;
         }
+        
         li {
             list-style: none;
         }
-
+        
         .tb-promo {
             position: relative;
             width: 520px;
@@ -22,13 +23,13 @@
             background-color: pink;
             margin: 100px auto;
         }
-
+        
         .tb-promo img {
             width: 520px;
             height: 280px;
         }
-
         /* 并集选择器可以集体声明相同的样式 */
+        
         .prev,
         .next {
             position: absolute;
@@ -44,14 +45,14 @@
             color: #fff;
             text-decoration: none;
         }
-
+        
         .prev {
             left: 0;
             /* border-radius: 15px; */
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
         }
-
+        
         .next {
             /* 如果一个盒子既有left属性也有right属性，则默认会执行 left属性 同理  top  bottom  会执行 top */
             right: 0;
@@ -59,6 +60,7 @@
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
         }
+        
         .promo-nav {
             position: absolute;
             bottom: 15px;
@@ -67,9 +69,10 @@
             width: 70px;
             height: 13px;
             /* background-color: pink; */
-            background: rgba(255,255,255, .3);
+            background: rgba(255, 255, 255, .3);
             border-radius: 7px;
         }
+        
         .promo-nav li {
             float: left;
             width: 8px;
@@ -79,7 +82,8 @@
             margin: 3px;
         }
         /* 不要忘记选择器权重的问题 */
-       .promo-nav .selected {
+        
+        .promo-nav .selected {
             background-color: #ff5000;
         }
     </style>
