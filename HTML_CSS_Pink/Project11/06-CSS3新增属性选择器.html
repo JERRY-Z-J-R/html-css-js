@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +15,24 @@
         input[type=text] {
             color: pink;
         }
+
         /* 选择首先是div 然后 具有class属性 并且属性值 必须是 icon开头的这些元素 */
         div[class^=icon] {
             color: red;
         }
+
         section[class$=data] {
             color: blue;
         }
+
         div.icon1 {
             color: skyblue;
         }
+
         /* 类选择器和属性选择器 伪类选择器 权重都是 10 */
     </style>
 </head>
+
 <body>
     <!-- 1. 利用属性选择器就可以不用借助于类或者id选择器 -->
     <!-- <input type="text" value="请输入用户名">
@@ -46,4 +52,5 @@
     <section class="icon3-ico">哪我是谁</section>
 
 </body>
+
 </html>
