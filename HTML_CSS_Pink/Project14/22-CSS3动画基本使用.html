@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CSS3动画基本使用</title>
     <style>
         /* 我们想页面一打开，一个盒子就从左边走到右边 */
         /* 1. 定义动画 */
-        
+
         @keyframes move {
+
             /* 开始状态 */
             0% {
                 transform: translateX(0px);
             }
+
             /* 结束状态 */
             100% {
                 transform: translateX(1000px);
             }
         }
-        
+
         div {
             width: 200px;
             height: 200px;

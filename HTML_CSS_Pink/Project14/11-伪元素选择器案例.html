@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>伪元素选择器案例</title>
     <style>
         @font-face {
             font-family: 'icomoon';
@@ -14,14 +14,14 @@
             font-weight: normal;
             font-style: normal;
         }
-        
+
         span {
             font-family: 'icomoon';
             position: absolute;
             top: 10px;
             right: 10px;
         }
-        
+
         div,
         p {
             position: relative;
@@ -29,6 +29,7 @@
             height: 35px;
             border: 1px solid red;
         }
+
         /* p::after {
             content: '';
             position: absolute;
@@ -36,7 +37,7 @@
             right: 10px;
             font-family: 'icomoon';
         } */
-        
+
         p::after {
             content: '\ea50';
             position: absolute;

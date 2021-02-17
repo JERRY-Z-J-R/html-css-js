@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CSS3 书写三角</title>
     <style>
         div {
             position: relative;
@@ -13,7 +13,7 @@
             height: 35px;
             border: 1px solid #000;
         }
-        
+
         div::after {
             content: "";
             position: absolute;
@@ -26,8 +26,9 @@
             transform: rotate(45deg);
             transition: all 0.2s;
         }
+
         /* 鼠标经过div  里面的三角旋转 */
-        
+
         div:hover::after {
             transform: rotate(225deg);
         }
