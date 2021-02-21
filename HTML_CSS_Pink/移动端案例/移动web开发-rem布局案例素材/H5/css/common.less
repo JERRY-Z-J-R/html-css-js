@@ -2,10 +2,12 @@
 a {
     text-decoration: none;
 }
+
 // 一定要写到最上面
 html {
     font-size: 50px;
 }
+
 // 我们此次定义的划分的份数 为 15
 @no: 15;
 // 320
@@ -14,12 +16,14 @@ html {
         font-size: 320px / @no;
     }
 }
+
 // 360
 @media screen and (min-width: 360px) {
     html {
         font-size: 360px / @no;
     }
 }
+
 // 375 iphone 678
 @media screen and (min-width: 375px) {
     html {
@@ -40,12 +44,14 @@ html {
         font-size: 400px / @no;
     }
 }
+
 // 414
 @media screen and (min-width: 414px) {
     html {
         font-size: 414px / @no;
     }
 }
+
 // 424
 @media screen and (min-width: 424px) {
     html {
@@ -66,6 +72,7 @@ html {
         font-size: 540px / @no;
     }
 }
+
 // 720
 @media screen and (min-width: 720px) {
     html {
