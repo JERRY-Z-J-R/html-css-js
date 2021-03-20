@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>打开和关闭窗口的使用</title>
+<script language="javascript">
+var myWindow;
+function openNewWin()
+{
+	//打开一个窗口
+	myWindow=window.open("example10.html","myWindow","width=200,height=150,top=200,left=100");
+}
+function closeNewWin()
+{
+	//关闭一个窗口
+	myWindow.close();
+}
+</script>
+</head>
+<body>
+<p><a href="javascript:openNewWin()">打开新窗口</a></p>
+<p><a href="javascript:closeNewWin()">关闭新窗口</a></p>
+</body>
+</html>

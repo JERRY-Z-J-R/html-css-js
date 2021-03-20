@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>相关元素操作</title>
+<script type="text/javascript">
+function init(){
+ 	var a = document.lastChild; //找到<html>元素
+ 	a = a.lastChild;  //找到<body>元素
+ 	a = a.childNodes[1]; //找到<ul>元素
+ 	a = a.childNodes[1]; //找到第一个<li>元素
+ 	a.style.color = "red"; //将字体颜色设为红色
+}
+</script>
+</head>
+<body onload="init()">
+ 	<ul>
+ 		<li id="one">标题一</li>
+ 		<li id="two">标题二</li>
+ 		<li id="three">标题三</li>
+ 		<li id="four">标题四</li>
+ 	</ul>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS控制表单样式</title>
+<style type="text/css">
+body,form,input{ padding:0; margin:0; border:0;}
+form{
+    width:327px;
+    height:215px;
+    margin:10px auto;
+    padding-top:30px;
+    background: url(images/pic02.jpg) no-repeat;
+}
+.content{
+    width:250px;
+    height:180px;
+    margin:5px auto;
+    background: rgba(255,255,255,0.5);
+}
+.content img{padding:10px 0 0 98px;}
+.content p{
+    width:160px;
+    height:19px;
+    background:#fff;
+    margin:10px 0 0 45px;
+    padding:2px;
+}
+.content input{
+    color:#757575;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+.name{
+    padding-left: 20px;
+    background:url(images/pic04.png) no-repeat;
+}
+.pass{
+    padding-left: 20px;
+    background:url(images/pic05.png) no-repeat;
+}
+.left{
+    margin:10px 0 0 65px;
+    background:rgba(0,0,0,0);
+    cursor: pointer;
+}
+.right{
+    margin:10px 0 0 35px;
+    background:rgba(0,0,0,0);
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<form action="#" method="post">
+    <div class="content">
+        <img src="images/pic03.png"/>
+        <p><input class="name" type="text" maxlength="6"/></p>
+        <p><input class="pass" type="password" size="20" /></p>
+        <input class="left" type="button" value="注册"/>
+        <input class="right" type="button" value="登录"/>
+    </div>
+</form>   
+</body>
+</html>

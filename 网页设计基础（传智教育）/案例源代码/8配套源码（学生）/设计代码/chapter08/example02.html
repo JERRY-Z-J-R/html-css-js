@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>删除属性</title>
+</head>
+<body>
+<script type="text/javascript">
+var box;
+box=new Object();
+box.name="小王";
+box.age = 18;
+document.write("删除前："+box.name+"的年龄是<b>"+box.age+"</b>");
+document.write("<br>删除box对象的age属性成功返回："+delete box.age);
+document.write("<br>删除后："+box.name+"的年龄是<b>"+box.age+"</b>");
+</script>
+</body>
+</html>

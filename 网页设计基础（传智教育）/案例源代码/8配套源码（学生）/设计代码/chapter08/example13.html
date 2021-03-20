@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>定时器的使用</title>
+<script language="javascript">
+function showTime(){
+	var now=new Date();
+	var dataTime=now.toLocaleTimeString();
+	time = document.getElementById("time");
+ 	time.innerHTML = dataTime;
+}
+var timer=window.setInterval("showTime()",1000);
+function clear(){
+	window.clearInterval(timer);
+	window.status="已取消定时器";
+}
+</script>
+</head>
+<body>
+<div id="time"></div>
+<p><a href="javascript:clear()">取消定时器</a></p>
+</body>
+</html>

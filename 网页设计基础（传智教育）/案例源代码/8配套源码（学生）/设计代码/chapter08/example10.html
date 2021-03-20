@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>二维数组</title>
+</head>
+<body>
+姓名 数学 语文 英语
+<hr/>
+<script type="text/javascript">
+var students,i,j;
+students=new Array();
+students[0]=new Array("张三",76,90,80);
+students[1]=new Array("李四",89,97,86);
+students[2]=new Array("王五",90,78,88);
+for(i in students){		
+	for(j in students[i]){
+			document.write(students[i][j] +"\t");
+	}
+    document.write("<br/>");
+}	
+</script>
+</body>
+</html>

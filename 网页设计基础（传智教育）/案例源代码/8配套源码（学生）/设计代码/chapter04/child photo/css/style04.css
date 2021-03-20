@@ -1,0 +1,86 @@
+/* CSS Document */
+*{margin:0; padding:0; list-style:none; outline:none; border:0; background:none;}
+body{font-family:"微软雅黑";background: #fdfdfd;}
+/*head*/
+#bg{
+	width:980px; 
+	height:617px; 
+	background:url(../images/bg.jpg) no-repeat; 
+	margin:0 auto; 
+	padding-top:10px;
+}
+.nav{
+	width:848px; 
+	height:46px; 
+	background:url(../images/nav.png) no-repeat; 
+	margin:0 auto; 
+	padding:40px 0 0 123px;
+}
+.nav span{
+	color:#685649; 
+	font-size:16px;
+	padding:0 30px;
+}
+.nav .margin_more{margin-right:240px;}
+/*news*/
+#news{
+	width:980px; 
+	height:300px; 
+	background:url(../images/dongtai.jpg) 60px top no-repeat; 
+	margin:18px auto; 
+	padding-top:120px;
+}
+.news_con{
+	width:294px; 
+	height:256px; 
+	float:left; 
+	margin-left:29px;
+}
+.news_con .one{
+	width:284px; 
+	height:50px; 
+	padding-left:10px;
+	line-height:50px; 
+	font-weight:bold; 
+	font-size:16px; 
+	border-bottom:1px solid #ddd;
+}
+.news_con .two{
+	width:284px;
+	height:70px;
+	line-height:20px; 
+	padding:10px 0 0 10px; 
+	font-size:12px; 
+	color:#bbb; 
+}
+.news_con .shadow{
+	width:294px; 
+	height:5px; 
+	background:url(../images/yinying.jpg) no-repeat; 
+}
+#exhibition{
+	width:980px; 
+	height:292px; 
+	background:url(../images/xinshang.jpg) no-repeat;
+	margin:0 auto; 
+	padding-top:170px;
+}
+#exhibition .pic{
+	width:916px;  
+	height:260px;
+	margin:0 auto;
+}
+#exhibition .pic img{margin-left:56px;}
+#footer{
+	width:100%; 
+	height:80px; 
+	background:url(../images/footer_bg.jpg) repeat-x; 
+	color:#fff; 
+	text-align:center; 
+	line-height:80px;
+}
+.tree{
+	position:fixed; 
+	right:5%;
+	bottom:5%;
+}

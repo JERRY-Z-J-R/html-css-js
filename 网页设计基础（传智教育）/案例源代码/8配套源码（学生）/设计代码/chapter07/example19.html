@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>函数的作用域</title>
+<script type="text/javascript">
+	function IsPrime(n){
+		if(n<1) return false;   //函数返回值：若n是素数，则返回true，否则返回false
+		var i;                     //此处变量i为局部变量
+		for(i=2;i<n;i++) if (n%i==0) return false;
+		return true;
+	}
+</script>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+	var i,n=0;                                    //i,n声明为全局变量
+	document.writeln("1-100之间的所有素数");
+	for(i=1;i<=100;i++){
+		if(IsPrime(i)){                         //判断是否为素数
+			n++                                   //累计素数个数   
+			document.write(i+"\t");           //使用制表符“\t”，使输出上下对齐
+			if(n%5==0) document.writeln();   //换行，5个素数一行
+		}	
+	}
+</script>
+</pre>
+</body>
+</html>
