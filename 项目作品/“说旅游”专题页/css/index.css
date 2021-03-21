@@ -1,0 +1,134 @@
+    .page {
+        width: 980px;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        height: 56px;
+        margin-top: 15px;
+    }
+
+    .logo {
+        display: inline;
+    }
+
+    .nav {
+        display: inline;
+        float: right;
+        margin-right: 20px;
+        margin-top: 14px;
+    }
+
+    .nav ul {
+        display: inline;
+    }
+
+    .nav ul li {
+        display: inline;
+        list-style: none;
+    }
+
+    .introduce {
+        margin: 28px 6px 28px 12px;
+    }
+
+    .introduce-img {
+        float: left;
+        width: 696px;
+        height: 450px;
+    }
+
+    .introduce-text {
+        display: inline-block;
+        width: 266px;
+        height: 450px;
+    }
+
+    .introduce-text-h {
+        margin-top: 0px;
+        margin-bottom: 3px;
+        margin-left: 5px;
+        text-align: center;
+        color: #FFA500;
+    }
+
+    .introduce-text p {
+        margin-left: 14px;
+    }
+
+    .content-img {
+        float: left;
+        width: 978px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .nav a {
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .nav a:hover {
+        color: #00923E;
+    }
+    
+    .comment-user {
+        margin-left: 14px;
+    }
+
+    .comment-user-img {
+        float: left;
+    }
+    
+    .comment-user-text {
+        display: inline-block;
+        margin-left: 12px;
+    }
+
+    .comment-user-text p {
+        font-size: 13px;
+        margin-top: 0;
+    }
+
+    .comment-user-text-name {
+        color: #F60;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .comment-user-text-time {
+        font-size: 13px;
+        color: #999;
+    }
+
+    .comment-user-text-source {
+        color: #F60;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .footer {
+        margin-bottom: 24px;
+    }
+
+    .footer p {
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .footer a {
+        color: #1d5983;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    hr {
+        color: #CCCCCC;
+        border-style: solid;
+    }
