@@ -5,19 +5,24 @@
     }
 
     .header {
-        height: 56px;
-        margin-top: 15px;
+        position: fixed;
+        top: 0px;
+        width: 980px;
+        height: 66px;
+        background-color: #FFF;
     }
 
     .logo {
+        float: left;
         display: inline;
+        margin-top: 10px;
     }
 
     .nav {
         display: inline;
         float: right;
         margin-right: 20px;
-        margin-top: 14px;
+        margin-top: 24px;
     }
 
     .nav ul {
@@ -30,13 +35,14 @@
     }
 
     .introduce {
-        margin: 28px 6px 28px 12px;
+        margin: 80px 6px 28px 12px;
     }
 
     .introduce-img {
         float: left;
         width: 696px;
         height: 450px;
+        margin-top: 10px;
     }
 
     .introduce-text {
