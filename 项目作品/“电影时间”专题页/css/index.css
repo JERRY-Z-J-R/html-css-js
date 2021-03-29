@@ -1,3 +1,6 @@
+    /* 周吉瑞 201905213040 */
+    /* 2021/3/26/ 11:40 AM */
+
     .page {
         width: 980px;
         margin: 0 auto;
@@ -8,7 +11,7 @@
         position: fixed;
         top: 0px;
         width: 980px;
-        height: 66px;
+        height: 73px;
         background-color: #FFF;
     }
 
@@ -22,7 +25,7 @@
         display: inline;
         float: right;
         margin-right: 20px;
-        margin-top: 24px;
+        margin-top: 30px;
     }
 
     .nav ul {
@@ -36,13 +39,6 @@
 
     .introduce {
         margin: 80px 6px 28px 12px;
-    }
-
-    .introduce-img {
-        float: left;
-        width: 696px;
-        height: 450px;
-        margin-top: 10px;
     }
 
     .introduce-text {
@@ -64,10 +60,15 @@
     }
 
     .content-img {
-        float: left;
-        width: 978px;
+        width: 980px;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .content-img img {
+        margin-right: 14.5px;
+        width: 92px;
+        height: 130px;
     }
 
     .nav a {
@@ -77,9 +78,28 @@
     }
 
     .nav a:hover {
-        color: #00923E;
+        color: #2FA2EF;
     }
-    
+
+    .content-introduce {
+        width: 980px;
+        height: 375px;
+    }
+
+    .content-introduce-text {
+        float: left;
+        width: 530px;
+    }
+
+    .content-introduce-img {
+        float: right;
+        width: 258px;
+    }
+
+    .content-introduce-img img {
+        margin-top: 6px;
+    }
+
     .comment-user {
         margin-left: 14px;
     }
@@ -87,7 +107,7 @@
     .comment-user-img {
         float: left;
     }
-    
+
     .comment-user-text {
         display: inline-block;
         margin-left: 12px;
@@ -137,7 +157,8 @@
     .link-top {
         position: fixed;
         top: 92%;
-        right: 15px;;
+        right: 15px;
+        ;
         width: 50px;
         height: 50px;
     }
