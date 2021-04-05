@@ -1,9 +1,9 @@
-#footer {
+.footer {
     width: 602px;
     margin: 20px auto;
 }
 
-#footer-title {
+.footer-title {
     height: 30px;
     line-height: 30px;
     font-family: "微软雅黑";
@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-#footer-title a {
+.footer-title a {
     text-transform: uppercase;
     text-decoration: none;
     font-family: "微软雅黑";
@@ -22,18 +22,18 @@
     color: #a5a5a5;
 }
 
-#footer-user {
+.footer-user {
     margin-top: 20px;
 }
 
-#footer-user-img {
+.footer-user-img {
     float: left;
     margin-right: 30px;
     width: 92px;
     height: 92px;
 }
 
-#footer-user-text {
+.footer-user-text {
     padding-top: 6px;
     font-style: italic;
     line-height: 26px;

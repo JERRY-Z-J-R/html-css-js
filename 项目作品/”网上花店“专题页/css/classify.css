@@ -1,4 +1,4 @@
-#classify-title a {
+.classify-title a {
     height: 42px;
     line-height: 42px;
     font-size: 14px;
@@ -9,18 +9,18 @@
     text-decoration: none;
 }
 
-#classify-title a:hover {
+.classify-title a:hover {
     color: #6A768E;
 }
 
-#classify-img {
+.classify-img {
     margin: 0px 2px 20px 2px;
     height: 434px;
     width: 976px;
 }
 
 
-#classify-text p {
+.classify-text p {
     line-height: 30px;
     text-align: center;
     font-size: 18px;
