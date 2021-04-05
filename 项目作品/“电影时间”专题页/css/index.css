@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     /* 周吉瑞 201905213040 */
     /* 2021/3/26/ 11:40 AM */
 
@@ -171,4 +172,179 @@
     hr {
         color: #CCCCCC;
         border-style: solid;
+=======
+    /* 周吉瑞 201905213040 */
+    /* 2021/3/26/ 11:40 AM */
+
+    .page {
+        width: 980px;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        position: fixed;
+        top: 0px;
+        width: 980px;
+        height: 73px;
+        background-color: #FFF;
+    }
+
+    .logo {
+        float: left;
+        display: inline;
+        margin-top: 10px;
+    }
+
+    .nav {
+        display: inline;
+        float: right;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+
+    .nav ul {
+        display: inline;
+    }
+
+    .nav ul li {
+        display: inline;
+        list-style: none;
+    }
+
+    .introduce {
+        margin: 80px 6px 28px 12px;
+    }
+
+    .introduce-text {
+        display: inline-block;
+        width: 266px;
+        height: 450px;
+    }
+
+    .introduce-text-h {
+        margin-top: 0px;
+        margin-bottom: 3px;
+        margin-left: 5px;
+        text-align: center;
+        color: #FFA500;
+    }
+
+    .introduce-text p {
+        margin-left: 14px;
+    }
+
+    .content-img {
+        width: 980px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content-img img {
+        margin-right: 14.5px;
+        width: 92px;
+        height: 130px;
+    }
+
+    .nav a {
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .nav a:hover {
+        color: #2FA2EF;
+    }
+
+    .content-introduce {
+        width: 980px;
+        height: 375px;
+    }
+
+    .content-introduce-text {
+        float: left;
+        width: 530px;
+    }
+
+    .content-introduce-img {
+        float: right;
+        width: 258px;
+    }
+
+    .content-introduce-img img {
+        margin-top: 6px;
+    }
+
+    .comment-user {
+        margin-left: 14px;
+    }
+
+    .comment-user-img {
+        float: left;
+    }
+
+    .comment-user-text {
+        display: inline-block;
+        margin-left: 12px;
+    }
+
+    .comment-user-text p {
+        font-size: 13px;
+        margin-top: 0;
+    }
+
+    .comment-user-text-name {
+        color: #F60;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .comment-user-text-time {
+        font-size: 13px;
+        color: #999;
+    }
+
+    .comment-user-text-source {
+        color: #F60;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .footer {
+        margin-bottom: 24px;
+    }
+
+    .footer p {
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .footer a {
+        color: #1d5983;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .link-top {
+        position: fixed;
+        top: 92%;
+        right: 15px;
+        ;
+        width: 50px;
+        height: 50px;
+    }
+
+    .link-top img {
+        width: 100%;
+        height: 100%;
+    }
+
+    hr {
+        color: #CCCCCC;
+        border-style: solid;
+>>>>>>> 1a93c40560861ff8330802165ead9ad1d9613a19
     }
