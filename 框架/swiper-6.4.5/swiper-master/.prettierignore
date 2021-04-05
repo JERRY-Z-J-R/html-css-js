@@ -1,7 +1,0 @@
-demos
-build
-node_modules
-dist
-package
-.nova
-postinstall.js
