@@ -1,0 +1,18 @@
+#header {
+    text-align: center;
+}
+
+#header h1 {
+    height: 86px;
+    line-height: 86px;
+    font-weight: normal;
+    color: #a5a5a5;
+}
+
+#header-title-max {
+    font-size: 35px;
+}
+
+#header-title-min {
+    font-size: 20px;
+}

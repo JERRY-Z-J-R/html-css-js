@@ -1,0 +1,25 @@
+#best-sellers {
+    width: 602px;
+    margin: 0 auto;
+}
+
+#best-sellers-title-img {
+    margin-top: 20px;
+}
+
+#best-sellers-img {
+    margin-top: 20px;
+}
+
+#best-sellers-text {
+    margin-top: 20px;
+}
+
+#best-sellers-text p {
+    line-height: 30px;
+    text-indent: 2em;
+}
+
+#best-sellers-text p>span {
+    text-decoration: underline;
+}
