@@ -1,0 +1,122 @@
+/* 
+** style.css (for index.html)
+** 数计学院 19计科3班 
+** 周吉瑞 20190521340 
+** 2021年04月08日 PM 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------ */
+
+.page {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* ------------------------ */
+
+.header {
+    background-color: #525252;
+    text-align: center;
+}
+
+/* ------------------------ */
+
+.show p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "隶书";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.show p a {
+    text-decoration: none;
+    color: #18191B;
+}
+
+.show p a:hover {
+    color: #7C251C;
+}
+
+/* ------------------------ */
+
+.title {
+    padding: 26px 0px 40px 0px;
+    text-align: center;
+}
+
+.introduce .title {
+    border-bottom: 3px solid #DCDCDC;
+}
+
+.title-h {
+    font-family: "隶书";
+    font-weight: 400;
+    font-size: 45px;
+    color: #7C251C;
+}
+
+.title-p {
+    line-height: 10px;
+    font-family: "隶书";
+    font-weight: 700;
+    font-size: 20px;
+    color: #7C251C;
+}
+
+.introduce-p {
+    margin-top: 30px;
+}
+
+.introduce-p p {
+    font-family: "隶书";
+    font-size: 20px;
+    font-weight: 700;
+    color: #303131;
+    text-indent: 2em;
+}
+
+.p-color {
+    color: #7C251C;
+}
+
+.p-1 {
+    font-size: 35px;
+    font-style: italic;
+}
+
+.p-2 {
+    font-size: 24px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.p-3 {
+    background-color: #F5EE30;
+}
+
+/* ------------------------ */
+
+.top-original img {
+    width: 100%;
+}
+
+/* ------------------------ */
+
+.footer {
+    height: 100px;
+    margin-top: -3px;
+    margin-bottom: 10px;
+    background-color: #525252;
+    text-align: center;
+}
+
+.footer p {
+    line-height: 100px;
+    color: #FFFFFF;
+}
