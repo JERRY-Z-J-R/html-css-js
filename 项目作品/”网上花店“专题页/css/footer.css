@@ -26,6 +26,10 @@
     margin-top: 20px;
 }
 
+.footer-user {
+    overflow: hidden;
+}
+
 .footer-user-img {
     float: left;
     margin-right: 30px;
@@ -34,7 +38,7 @@
 }
 
 .footer-user-text {
-    padding-top: 6px;
+    margin-top: 6px;
     font-style: italic;
     line-height: 26px;
     font-size: 14px;

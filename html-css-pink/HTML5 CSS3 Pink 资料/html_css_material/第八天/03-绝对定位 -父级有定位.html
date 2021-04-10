@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>绝对定位-父级有定位</title>
+    <title>绝对定位-父级有定位-多级父亲</title>
     <style>
+        /* 以最近一级的有定位祖先元素为参考点移动位置 */
+        /* 即：谁带有定位并且离我最近，我就以谁为准！ */
         .yeye {
             position: relative;
             width: 800px;
@@ -13,12 +16,14 @@
             background-color: hotpink;
             padding: 50px;
         }
+
         .father {
-          
+
             width: 500px;
             height: 500px;
             background-color: skyblue;
         }
+
         .son {
             position: absolute;
             left: 30px;
@@ -29,13 +34,15 @@
         }
     </style>
 </head>
+
 <body>
     <div class="yeye">
-            <div class="father">
-                    <div class="son"></div>
-            </div>
+        <div class="father">
+            <div class="son"></div>
+        </div>
     </div>
-   
-   
+
+
 </body>
+
 </html>
