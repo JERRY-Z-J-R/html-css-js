@@ -1,0 +1,227 @@
+/* style.css (for index.html) */
+/* 数计学院 19计科3班  */
+/* 周吉瑞 20190521340  */
+/* 2021/4/23/ 11:40 AM */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 980px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Microsoft YaHei", serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ------------------------- */
+
+.header {
+    height: 80px;
+}
+
+.header .logo {
+    float: left;
+    margin: 12px 90px;
+}
+
+.header .login {
+    float: right;
+    margin: 28px 110px;
+}
+
+.header .login a {
+    color: #ff9c00;
+    font-size: 18px;
+}
+
+.header .login a:hover {
+    text-decoration: underline;
+}
+
+.header .login em {
+    font-style: normal;
+    color: #ff9c00;
+}
+
+/* ------------------------- */
+
+.nav {
+    width: 100%;
+    height: 50px;
+    background: #ff9c00;
+}
+
+.nav ul {
+    width: 680px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0 150px;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: block;
+    height: 50px;
+    padding: 0 39px;
+    font-size: 16px;
+    color: #9c5132;
+    line-height: 50px;
+    transition: all 0.5s;
+}
+
+.nav ul li a:hover {
+    background-color: #ffe9c5;
+}
+
+/* ------------------------- */
+
+.banner {
+    width: 1903px;
+    height: 494px;
+    margin: 0 auto;
+    background: url("../images/banner.jpg") no-repeat;
+}
+
+/* ------------------------- */
+
+.list {
+    width: 100%;
+    height: 240px;
+    background: #e7bf80;
+}
+
+.list ul {
+    width: 940px;
+    height: 195px;
+    margin: 0 auto;
+    padding: 45px 0 0 40px;
+}
+
+.list ul li {
+    float: left;
+    width: 146px;
+    height: 55px;
+    padding-top: 95px;
+    margin-right: 42px;
+    text-align: center;
+    color: #9c5132;
+    transition: all 0.8s;
+}
+
+.list ul li:hover {
+	transform: rotate(360deg);
+}
+
+.list ul .list1 {
+    background: url(../images/list1.png) no-repeat;
+}
+
+.list ul .list2 {
+    background: url(../images/list2.png) no-repeat;
+}
+
+.list ul .list3 {
+    background: url(../images/list3.png) no-repeat;
+}
+
+.list ul .list4 {
+    background: url(../images/list4.png) no-repeat;
+}
+
+.list ul .list5 {
+    background: url(../images/list5.png) no-repeat;
+}
+
+/* ------------------------- */
+
+.content {
+    width: 100%;
+    height: 570px;
+    background: #f8f5bc;
+}
+
+.content ul {
+    width: 912px;
+    height: 530px;
+    margin: 0 auto;
+    padding: 40px 0 0 68px;
+}
+
+.content ul li {
+    width: 180px;
+    height: 220px;
+    border: 1px solid #ccc;
+    float: left;
+    background: #fff;
+    margin: 0 39px 30px 0;
+    font-size: 14px;
+    color: #9c5132;
+    transition: all 0.5s;
+}
+
+.content ul li:hover {
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, .2);
+}
+
+.content ul li img {
+    margin: 12px 12px 3px 12px;
+    width: 158px;
+    height: 122px;
+}
+
+.content ul li span {
+    display: block;
+    padding: 2px 0 0 16px;
+}
+
+.content ul li span.con_name {
+    color: #fd8187;
+}
+
+.content ul li span b {
+    font-weight: normal;
+    color: #fd8187;
+}
+
+/* ------------------------- */
+
+.footer {
+    position: relative;
+    top: -8px;
+    width: 100%;
+    height: 120px;
+    background: url(../images/footer.png) repeat-x;
+    text-align: center;
+    line-height: 120px;
+    color: #fff;
+    font-size: 18px;
+}

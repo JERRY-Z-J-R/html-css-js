@@ -1,0 +1,30 @@
+body {
+  margin: 0;padding:0;overflow:hidden;
+}
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.star {
+  animation: move 20s linear infinite;
+}
+
+.shootingStar {
+  animation: dash 0.7s ease;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0%, 0%);
+  }
+  to {
+    transform: translate(-100%, 100%);
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -227.62;
+  }
+}

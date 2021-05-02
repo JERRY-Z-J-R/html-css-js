@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>旋转中心点</title>
     <style>
         div {
+            /* 溢出隐藏 */
             overflow: hidden;
             width: 200px;
             height: 200px;
@@ -15,7 +16,7 @@
             margin: 10px;
             float: left;
         }
-        
+
         div::before {
             content: "黑马";
             display: block;
@@ -26,8 +27,8 @@
             transform-origin: left bottom;
             transition: all 0.4s;
         }
-        /* 鼠标经过div 里面的before 复原 */
-        
+
+        /* 鼠标经过 div 里面的 before 复原 */
         div:hover::before {
             transform: rotate(0deg);
         }
@@ -35,9 +36,9 @@
 </head>
 
 <body>
-    <div></div>
-    <div></div>
-    <div></div>
+<div></div>
+<div></div>
+<div></div>
 </body>
 
 </html>

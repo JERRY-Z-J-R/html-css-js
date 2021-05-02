@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.star {
+  animation: move 20s linear infinite;
+}
+
+.shootingStar {
+  animation: dash 0.7s ease;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0%, 0%);
+  }
+
+  to {
+    transform: translate(-100%, 100%);
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -227.62;
+  }
+}
+
+/* ----------------------------------- */
+
+#error404 {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  width: 540px;
+  margin-left: -270px;
+}
+
+/* ----------------------------------- */
+
+h1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes w {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 702px;
+  }
+}
+
+#title {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  margin-left: -378px;
+  font-size: 54px;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: m 3s steps(14) forwards;
+}
+
+@keyframes m {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 756px;
+  }
+}
+
+/* ----------------------------------- */
+
+@-webkit-keyframes rotation {
+
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+
+}
+
+#error404 {
+  -webkit-transform: rotate(360deg);
+
+  animation: rotation 3s linear infinite;
+
+  -moz-animation: rotation 3s linear infinite;
+
+  -webkit-animation: rotation 3s linear infinite;
+
+  -o-animation: rotation 3s linear infinite;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,38 +11,44 @@
             width: 0;
             height: 0;
             /* border: 10px solid pink; */
-            border-top: 10px solid pink;
-            border-right: 10px solid red;
-            border-bottom: 10px solid blue;
-            border-left: 10px solid green;
+            border-top: 30px solid hotpink;
+            border-right: 30px solid black;
+            border-bottom: 30px solid skyblue;
+            border-left: 30px solid gray;
         }
+
         .box2 {
             width: 0;
             height: 0;
             border: 50px solid transparent;
-            border-left-color: pink;
-            margin: 100px auto;
+            border-left-color: black;
+            margin: 50px;
         }
+
         .jd {
+            /* 子绝父相 */
             position: relative;
             width: 120px;
             height: 249px;
-            background-color: pink;
+            background-color: black;
         }
+
         .jd span {
+            /* 子绝父相 */
             position: absolute;
             right: 15px;
-            top: -10px;
+            top: -20px;
             width: 0;
             height: 0;
-            /* 为了照顾兼容性 */
-            line-height: 0;  
+            /* 下面两行为了照顾兼容性 */
+            line-height: 0;
             font-size: 0;
-            border: 5px solid transparent;
-            border-bottom-color: pink;
+            border: 10px solid transparent;
+            border-bottom-color: black;
         }
     </style>
 </head>
+
 <body>
     <div class="box1"></div>
     <div class="box2"></div>
@@ -49,4 +56,5 @@
         <span></span>
     </div>
 </body>
+
 </html>

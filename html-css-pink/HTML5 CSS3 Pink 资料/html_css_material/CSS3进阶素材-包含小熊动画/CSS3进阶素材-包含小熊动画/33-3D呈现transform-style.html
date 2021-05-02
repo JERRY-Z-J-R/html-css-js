@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>transform-style</title>
     <style>
         body {
             perspective: 500px;
         }
-        
+
         .box {
             position: relative;
             width: 200px;
@@ -20,11 +20,11 @@
             /* 让子元素保持3d立体空间环境 */
             transform-style: preserve-3d;
         }
-        
+
         .box:hover {
             transform: rotateY(60deg);
         }
-        
+
         .box div {
             position: absolute;
             top: 0;
@@ -33,7 +33,7 @@
             height: 100%;
             background-color: pink;
         }
-        
+
         .box div:last-child {
             background-color: purple;
             transform: rotateX(60deg);
@@ -42,10 +42,10 @@
 </head>
 
 <body>
-    <div class="box">
-        <div></div>
-        <div></div>
-    </div>
+<div class="box">
+    <div></div>
+    <div></div>
+</div>
 </body>
 
 </html>

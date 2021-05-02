@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>两面翻转的盒子</title>
     <style>
         body {
             perspective: 400px;
         }
-        
+
         .box {
             position: relative;
             width: 300px;
@@ -20,11 +20,11 @@
             /* 让背面的紫色盒子保留立体空间 给父级添加的 */
             transform-style: preserve-3d;
         }
-        
+
         .box:hover {
             transform: rotateY(180deg);
         }
-        
+
         .front,
         .back {
             position: absolute;
@@ -38,12 +38,12 @@
             text-align: center;
             line-height: 300px;
         }
-        
+
         .front {
             background-color: pink;
             z-index: 1;
         }
-        
+
         .back {
             background-color: purple;
             /* 像手机一样 背靠背 旋转 */
@@ -53,10 +53,10 @@
 </head>
 
 <body>
-    <div class="box">
-        <div class="front">黑马程序员</div>
-        <div class="back">pink老师这里等你</div>
-    </div>
+<div class="box">
+    <div class="front">黑马程序员</div>
+    <div class="back">pink老师这里等你</div>
+</div>
 </body>
 
 </html>

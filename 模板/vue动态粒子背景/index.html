@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>CodePen - Galaxy Sim</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div id="app">
+  <svg ref="svg" @mousemove="doThing" @touchmove="doThingTouch" width="100%" height="100%"
+    xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="100%" height="100%" fill="#0D0D0D" />
+    <star v-once v-for="star in 100" />
+    <dynamic-circle :class="`circle-${index}`" :index="index" :origin="origin" v-for="(circles, index) in 100" />
+    <shooting-star />
+  </svg>
+</div>
+
+<script src='js/vue.min.js'></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

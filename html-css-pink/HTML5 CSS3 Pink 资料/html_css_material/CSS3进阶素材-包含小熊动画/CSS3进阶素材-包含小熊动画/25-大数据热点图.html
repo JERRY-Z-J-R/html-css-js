@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>大数据热点图</title>
     <style>
         body {
             background-color: #333;
         }
-        
+
         .map {
             position: relative;
             width: 747px;
@@ -18,26 +18,28 @@
             background: url(media/map.png) no-repeat;
             margin: 0 auto;
         }
-        
+
         .city {
             position: absolute;
             top: 227px;
             right: 193px;
             color: #fff;
         }
-        
+
         .tb {
+            /* 此处只能使用 top right 因为这样才能层叠 city，
+            否则如果使用 bottom 的话，还会基础 city 的 top，bottom 与 top 优先执行 top */
             top: 500px;
             right: 80px;
         }
-        
+
         .dotted {
             width: 8px;
             height: 8px;
             background-color: #09f;
             border-radius: 50%;
         }
-        
+
         .city div[class^="pulse"] {
             /* 保证我们小波纹在父盒子里面水平垂直居中 放大之后就会中心向四周发散 */
             position: absolute;
@@ -50,17 +52,18 @@
             border-radius: 50%;
             animation: pulse 1.2s linear infinite;
         }
-        
+
         .city div.pulse2 {
             animation-delay: 0.4s;
         }
-        
+
         .city div.pulse3 {
             animation-delay: 0.8s;
         }
-        
+
         @keyframes pulse {
-            0% {}
+            0% {
+            }
             70% {
                 /* transform: scale(5);  我们不要用scale 因为他会让 阴影变大*/
                 width: 40px;
@@ -77,20 +80,20 @@
 </head>
 
 <body>
-    <div class="map">
-        <div class="city">
-            <div class="dotted"></div>
-            <div class="pulse1"></div>
-            <div class="pulse2"></div>
-            <div class="pulse3"></div>
-        </div>
-        <div class="city tb">
-            <div class="dotted"></div>
-            <div class="pulse1"></div>
-            <div class="pulse2"></div>
-            <div class="pulse3"></div>
-        </div>
+<div class="map">
+    <div class="city">
+        <div class="dotted"></div>
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <div class="pulse3"></div>
     </div>
+    <div class="city tb">
+        <div class="dotted"></div>
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <div class="pulse3"></div>
+    </div>
+</div>
 </body>
 
 </html>

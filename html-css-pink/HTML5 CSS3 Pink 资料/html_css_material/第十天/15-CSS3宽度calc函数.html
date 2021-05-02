@@ -7,23 +7,24 @@
     <title>CSS3属性calc函数</title>
     <style>
         .father {
-            width: 300px;
-            height: 200px;
-            background-color: pink;
+            width: 500px;
+            height: 500px;
+            background-color: black;
         }
+
         .son {
-            /* width: 150px; */
-            /* width: calc(150px + 30px); */
-            width: calc(100% - 30px);
-            height: 30px;
-            background-color: skyblue;
+            /* width: 300px; */
+            /* width: calc(500px - 100px); */
+            width: calc(100% - 100px);
+            height: 200px;
+            background-color: salmon;
         }
     </style>
 </head>
 <body>
-    <!-- 需求我们的子盒子宽度永远比父盒子小30像素 -->
-    <div class="father">
-        <div class="son"></div>
-    </div>
+<!-- 需求我们的子盒子宽度永远比父盒子小 100 像素 -->
+<div class="father">
+    <div class="son"></div>
+</div>
 </body>
 </html>

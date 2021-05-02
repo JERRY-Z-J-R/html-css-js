@@ -1,0 +1,135 @@
+*{margin:0;padding:0;border:0;list-style: none;}
+body{font-family: "微软雅黑";font-size: 16px;color:#404042;}
+a{text-decoration: none;color:#fff;}
+.header{
+	width:980px;
+	margin:0 auto;
+	padding-top: 20px;
+	overflow: hidden;
+}
+.header .left{float: left;}
+.header .right{
+	float: right;
+	line-height: 80px;
+}
+.header a{color: #404042;}
+.header a:hover{color:#da5454;}
+.nav{
+	width:100%;
+	height:40px;
+	background: #404042;
+	margin-top: 15px;
+}
+.nav .nav_in{
+	width:980px;
+	margin:0 auto;
+}
+.nav_in li{float: left;}
+.nav_in li a{
+	display: block;
+	line-height: 40px;
+	padding:0 36px;
+}
+.nav_in li.current{background: #da5454;}
+.nav_in a:hover{background: #da5454;}
+.banner{
+	width:100%;
+	overflow: hidden;
+}
+.banner .ban{
+	position: relative;
+	left:50%;
+	margin-left: -800px;
+}
+.banner .list{
+	width: 980px;
+	margin:0 auto;
+}
+.banner .list li{
+	width:208px;
+	height:70px;
+	border: 1px solid #ccc;
+	border-right: none;
+	float: left;
+	padding:30px 0 0 35px;
+}
+.banner .list li.last{border-right: 1px solid #ccc;}
+.banner .list li img{
+	float: left;
+	margin-right: 15px;
+}
+.banner .list li a{
+	float: left;
+	line-height: 30px;
+	color:#404042;
+}
+.banner .list li a:hover{color:#da5454;}
+.banner .list li span{
+	float: left;
+	font-size: 14px;
+	color:#bbb;
+}
+.content{
+	width:980px;
+	margin:20px auto 40px;	
+}
+.content h2{
+	font-size: 20px;
+	margin-bottom: 10px;
+	line-height: 50px;
+}
+.content .pic{
+	padding:15px 10px 0;
+	border-top: 1px solid #ccc;
+	overflow: hidden;
+}
+.content .pic li{
+	float: left;
+	margin:0 15px 15px 0;
+}
+.content .pic img{display: block;}
+.content .pic .not{margin:0;}
+.content .txt{
+	width:980px;
+	padding-top:15px;
+	border-top: 1px solid #ccc;
+	overflow: hidden;
+}
+.content .txt li{
+	float: left;
+	width:280px;
+	border:1px solid #ccc;
+	padding:20px 17px;
+	margin-right: 15px;
+}
+.content .txt li.right{margin:0;}
+.content .txt li h3{
+	font-size: 16px;
+}
+.content .txt li dl{
+	width:280px;
+	height:66px; 
+	border-bottom: 1px solid #ccc;
+	padding-top: 20px;
+}
+.content .txt li dl dt{
+	float: left;
+	margin-right: 15px;
+}
+.content .txt li dl .last{
+	font-size: 14px;
+	line-height: 30px;
+	color:#bbb;
+}
+.footer{
+	width:100%;
+	height:80px;
+	background: #191919;
+	text-align: center;
+	padding-top: 30px;
+	color:#ccc;
+}
+.footer p{
+	line-height: 30px;
+	font-size: 14px;
+}

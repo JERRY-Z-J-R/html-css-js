@@ -1,0 +1,70 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family:"隶书"; 
+	font-size:16px; 
+	color:#303131;
+}
+.header{
+	width:980px;
+	height:114px;
+	background-color:#525252;
+	margin:0 auto;
+	text-align:center;
+}
+.ymss{
+	width:980px;
+	margin:0 auto;
+}
+.ymss h2{
+ 	font-size: 18px;
+ 	line-height: 40px;
+ }
+.zhuti{
+	width:980px;
+	font-size:30px;
+	margin:0 auto;
+	text-align:center;
+}
+.zhuti h2{
+	color:brown;
+	line-height:30px;
+}
+.zhuti h3{
+	font-size:20px;
+	color:brown;
+	line-height:30px;
+}
+.zhuti p{
+	font-size: 20px;
+	text-align: left;
+	text-indent: 2em;
+
+}
+.zhuti p em{
+	font-size:30px;
+	color:#7c251c;
+}
+.zhuti p strong{
+	color:#7c251c;
+}
+.zhuti p ins{
+	font-size:24px;
+	color:#7c251c;
+}
+.zhuti b{
+	background-color: #f5ee30;
+}
+.footer{
+	width:980px;
+	height:100px;
+	background-color:#525252;
+	text-align:center;
+	margin:0 auto;
+	color:white;
+	font-family:"微软雅黑";
+	line-height:100px;
+	font-size:14px;
+}

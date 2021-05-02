@@ -1,0 +1,315 @@
+/* style.css (for index.html) */
+/* 数计学院 19计科3班  */
+/* 周吉瑞 20190521340  */
+/* 2021/4/30/ 11:40 AM */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #fff9ed;
+    font-family: "Microsoft YaHei", serif;
+    font-size: 14px;
+}
+
+.w {
+    width: 980px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*----------------------------------------*/
+
+.header {
+    width: 100%;
+    height: 128px;
+    border-bottom: 3px solid #d5d5d5;
+    background: url(../images/head_bg.jpg) repeat-x;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .logo a {
+    display: block;
+    overflow: hidden;
+    width: 178px;
+    height: 118px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -9999px;
+}
+
+.header .nav li {
+    float: left;
+}
+
+.header .nav li a {
+    display: inline-block;
+    height: 91px;
+    width: 119px;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.header .nav li a:hover {
+    background: url(../images/xuanfu.png) center center;
+}
+
+/*----------------------------------------*/
+
+.column .banner {
+    height: 373px;
+}
+
+.style_bg {
+    height: 330px;
+    padding: 10px 36px 5px;
+    background: #ec6e47;
+}
+
+.style {
+    height: 314px;
+    padding: 8px 10px 8px 6px;
+    background: #fff;
+}
+
+.style dl {
+    float: left;
+    width: 279px;
+    height: 313px;
+    margin-left: 4px;
+}
+
+.style dl:last-of-type {
+    width: 322px;
+}
+
+.style dt,
+.style dd {
+    float: left;
+}
+
+.style .left1-img,
+.style .left2-img,
+.style .center1-img,
+.style .center2-img {
+    width: 162px;
+}
+
+.style .left1-title,
+.style .left2-title,
+.style .center1-title,
+.style .center2-title,
+.style .right1-title {
+    width: 117px;
+}
+
+.style .left1-img,
+.style .left1-title,
+.style .center1-img,
+.style .center1-title {
+    margin-bottom: 8px;
+}
+
+.style .left1-img {
+    height: 169px;
+    background: url(../images/pic01.jpg) no-repeat;
+}
+
+.style .left1-title {
+    height: 169px;
+    line-height: 169px;
+}
+
+.style .left2-img {
+    height: 137px;
+    background: url(../images/pic02.jpg) no-repeat;
+}
+
+.style .left2-title {
+    height: 137px;
+    line-height: 137px;
+}
+
+.style .center1-img {
+    height: 117px;
+    background: url(../images/pic03.jpg) no-repeat;
+}
+
+.style .center1-title {
+    height: 117px;
+    line-height: 117px;
+}
+
+.style .center2-img {
+    height: 188px;
+    background: url(../images/pic04.jpg) no-repeat;
+}
+
+.style .center2-title {
+    height: 188px;
+    line-height: 188px;
+}
+
+.style .right1-img {
+    width: 205px;
+    height: 314px;
+    background: url(../images/pic05.jpg) no-repeat;
+}
+
+.style .right1-title {
+    height: 314px;
+    line-height: 314px;
+}
+
+.style a {
+    display: block;
+    background: #242424;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.style a:hover {
+    background: #ea6c46;
+}
+
+/*----------------------------------------*/
+
+.content {
+    margin-top: 80px;
+}
+
+.content-title {
+    width: 259px;
+    height: 45px;
+    background: #ea6c46;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 45px;
+    text-align: center;
+}
+
+.current {
+    height: 342px;
+    padding: 13px 0 0 20px;
+    border: 1px solid #dcd2ba;
+    background: #fff;
+}
+
+.current dl {
+    float: left;
+    width: 229px;
+    height: 330px;
+    margin-right: 5px;
+    border: 1px solid #dcd2ba;
+}
+
+.current dt {
+    width: 229px;
+    height: 212px;
+    border-bottom: 1px solid #dcd2ba;
+}
+
+.current-img1 {
+    background: url(../images/match01.jpg) center center no-repeat;
+}
+
+.current-img2 {
+    background: url(../images/match02.jpg) center center no-repeat;
+}
+
+.current-img3 {
+    background: url(../images/match03.jpg) center center no-repeat;
+}
+
+.current-img4 {
+    background: url(../images/match04.jpg) center center no-repeat;
+}
+
+.current-title {
+    width: 229px;
+    height: 66px;
+    background: #fff;
+    line-height: 66px;
+    color: #7a7a7a;
+    font-size: 22px;
+    text-align: center;
+}
+
+.current-button {
+    width: 140px;
+    height: 38px;
+    margin: 0 14px;
+    padding-left: 60px;
+    background: #f3734e url(../images/gouwu.jpg) left center no-repeat;
+    color: #fff;
+    line-height: 38px;
+}
+
+
+.current a {
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: 38px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.current a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, .4) no-repeat center;
+    transition: all .2s;
+}
+
+.content a:hover::before {
+    width: 200px;
+}
+
+/*----------------------------------------*/
+
+.footer {
+    width: 100%;
+    height: 103px;
+    margin-top: 65px;
+    padding-top: 50px;
+    background: #020202;
+    color: #fff;
+    line-height: 26px;
+    text-align: center;
+}

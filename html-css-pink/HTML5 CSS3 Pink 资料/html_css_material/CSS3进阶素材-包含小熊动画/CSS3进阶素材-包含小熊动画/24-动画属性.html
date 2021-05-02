@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>动画属性</title>
     <style>
         @keyframes move {
             0% {
@@ -15,7 +15,7 @@
                 transform: translate(1000px, 0);
             }
         }
-        
+
         div {
             width: 100px;
             height: 100px;
@@ -28,29 +28,29 @@
             /* animation-timing-function: ease; */
             /* 何时开始 */
             animation-delay: 1s;
-            /* 重复次数  iteration 重复的 conut 次数  infinite  无限 */
+            /* 重复次数 iteration 重复的 conut 次数 infinite 无限 */
             /* animation-iteration-count: infinite; */
-            /* 是否反方向播放 默认的是 normal  如果想要反方向 就写 alternate */
+            /* 是否反方向播放 默认的是 normal 如果想要反方向 就写 alternate */
             /* animation-direction: alternate; */
-            /* 动画结束后的状态 默认的是 backwards  回到起始状态 我们可以让他停留在结束状态 forwards */
+            /* 动画结束后的状态 默认的是 backwards 回到起始状态 我们可以让他停留在结束状态 forwards */
             /* animation-fill-mode: forwards; */
             /* animation: name duration timing-function delay iteration-count direction fill-mode; */
             /* animation: move 2s linear 0s 1 alternate forwards; */
-            /* 前面2个属性 name  duration 一定要写 */
-            /* animation: move 2s linear  alternate forwards; */
+            /* 前面 2 个属性 name duration 一定要写 */
+            /* animation: move 2s linear alternate forwards; */
         }
-        
+
         div:hover {
-            /* 鼠标经过div 让这个div 停止动画，鼠标离开就继续动画 */
+            /* 鼠标经过 div 让这个 div 停止动画，鼠标离开就继续动画 */
             animation-play-state: paused;
         }
     </style>
 </head>
 
 <body>
-    <div>
+<div>
 
-    </div>
+</div>
 </body>
 
 </html>
