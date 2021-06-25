@@ -1,0 +1,104 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     background-color: rgb(0, 0, 0);
+ }
+
+ .header {
+     text-align: center;
+     color: white;
+     font-size: 1.5rem;
+     font-family: '宋体';
+     position: fixed;
+     top: 8%;
+     margin: 0 auto;
+     width: 100%;
+     height: 50px;
+ }
+
+ .wrap {
+     display: flex;
+     width: 90vw;
+     height: 32vw;
+ }
+
+ .card {
+     background-size: auto 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     border-radius: 50px;
+     color: rgb(255, 255, 255);
+     flex: 0.5;
+     cursor: pointer;
+     height: 66vh;
+     position: relative;
+     margin: 10px;
+     transition: flex 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
+ }
+
+ .card h3 {
+     font-size: 24px;
+     position: absolute;
+     bottom: 20px;
+     left: 20px;
+     margin: 0;
+     transition: opacity 0s ease-in 0s;
+ }
+
+ .card.active {
+     /* 通过弹性布局方式 改变每个盒子的收缩 */
+     flex: 5;
+ }
+
+ .card.active h3 {
+     opacity: 1;
+     transition: opacity 0.3s ease-in 0.4s;
+ }
+
+ .banner {
+     margin: 0 auto;
+     width: 100%;
+     position: fixed;
+     bottom: 4%;
+     text-align: center;
+ }
+
+ .banner h4 {
+     color: rgb(255, 255, 255);
+     font-family: '宋体';
+     font-weight: 400;
+     line-height: 2.4rem;
+ }
+
+ .banner h6 {
+     color: rgb(255, 255, 255);
+     font-weight: 400;
+ }
+
+ /* CSS3 @media 查询，针对不同的媒体类型定义不同的样式。
+    @media 可以针对不同的屏幕尺寸设置不同的样式，
+    此处我们用于设置设计响应式的页面， 
+    当重置浏览器大小的过程中，页面会根据浏览器的宽度和高度重新渲染页面。
+ */
+ /* 定义输出设备中的页面最大可见区域宽度为500px。 */
+ @media (max-width: 500px) {
+     .wrap {
+         width: 100vw;
+     }
+
+     .card:nth-child(4) {
+         display: none;
+     }
+
+     .card:nth-child(5) {
+         display: none;
+     }
+ }

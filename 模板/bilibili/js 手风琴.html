@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岁月</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .wrap {
+            display: flex;
+            width: 86vw;
+            height: 24vw;
+        }
+
+        .card {
+            background-size: auto 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 50px;
+            color: #fff;
+            flex: 0.5;
+            cursor: pointer;
+            height: 66vh;
+            position: relative;
+            margin: 10px;
+            transition: flex 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
+        }
+
+        .card h3 {
+            font-size: 20px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            margin: 0;
+            transition: opcity 0s ease-in 0s;
+        }
+
+        .card.active {
+            /*通过弹性布局方式 改变每个盒子的收缩*/
+            flex: 5;
+        }
+
+        .card.active h3 {
+            opacity: 1;
+            transition: opcity 0.3s ease-in 0.4s;
+        }
+
+        @media (max-width:500px) {
+            .wrap {
+                width: 100vw;
+
+            }
+
+            .card:nth-child(4) {
+                display: none;
+            }
+
+            .card:nth-child(5) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="card active" style="background-image: url(images/s1.jpg);">
+            <h3>幼儿园</h3>
+        </div>
+        <div class="card" style="background-image: url(images/s2.jpg);">
+            <h3>小学</h3>
+        </div>
+        <div class="card" style="background-image: url(images/s3.jpg);">
+            <h3>初中</h3>
+        </div>
+        <div class="card" style="background-image: url(images/s4.jpg);">
+            <h3>高中</h3>
+        </div>
+        <div class="card" style="background-image: url(images/s5.jpg);">
+            <h3>大学</h3>
+        </div>
+    </div>
+    <script>
+        //获取小卡片
+        var wrap = document.getElementsByClassName('wrap')[0];
+        var cards = wrap.getElementsByClassName('card');
+        console.log(wrap);
+        console.log(cards);
+
+        //遍历节点给cards添加移入事件，并添加active类名即可实现 手风琴收缩效果
+
+        for (var i = 0; i < cards.length; i++) {
+            cards[i].addEventListener('mouseover', function () {
+                //事前先清除下
+                removeActive();
+                //给当前的添加active类名
+                this.className = "card active"
+            })
+        }
+
+        function removeActive() {
+            for (var i = 0; i < cards.length; i++) {
+                cards[i].className = "card";
+            }
+        }
+    </script>
+</body>
+
+</html>
