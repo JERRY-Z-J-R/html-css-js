@@ -3,15 +3,19 @@
   height: 200px;
   background-color: pink;
 }
+
 .header a {
   color: red;
 }
+
 .header a:hover {
   color: blue;
 }
+
 .nav .logo {
   color: green;
 }
+
 .nav::before {
   content: "";
 }

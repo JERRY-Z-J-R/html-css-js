@@ -6,14 +6,13 @@
   function setBodyFontSize() {
     if (document.body) {
       document.body.style.fontSize = (12 * dpr) + 'px'
-    }
-    else {
+    } else {
       document.addEventListener('DOMContentLoaded', setBodyFontSize)
     }
   }
   setBodyFontSize();
 
-  // set 1rem = viewWidth / 10
+  // set 1rem = viewWidth / 20
   function setRemUnit() {
     var rem = docEl.clientWidth / 20
     docEl.style.fontSize = rem + 'px'

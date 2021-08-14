@@ -1,0 +1,84 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     background-color: rgba(0, 0, 0, 0);
+ }
+
+ .main {
+     position: relative;
+     width: 1150px;
+     margin: 15px auto;
+     text-align: center;
+ }
+
+ video {
+     width: 560px;
+     border-radius: 2.5rem;
+ }
+
+ .main div {
+     width: 560px;
+     height: 315px;
+ }
+
+ .vi1 {
+     position: absolute;
+     left: 0;
+ }
+
+ .di1 {
+     position: absolute;
+     right: 0;
+ }
+
+ .vi2 {
+     position: absolute;
+     top: 350px;
+     right: 0;
+ }
+
+ .di2 {
+     position: absolute;
+     top: 350px;
+     left: 0;
+ }
+
+ .vi3 {
+     position: absolute;
+     top: 700px;
+     left: 0;
+ }
+
+ .di3 {
+     position: absolute;
+     top: 700px;
+     right: 0;
+ }
+
+ .vi4 {
+     position: absolute;
+     top: 1050px;
+     right: 0;
+ }
+
+ .di4 {
+     position: absolute;
+     top: 1050px;
+     left: 0;
+ }
+
+
+ .di1,
+ .di2,
+ .di3,
+ .di4 {
+     font-family: '仿宋';
+     font-weight: 900;
+     font-size: 3rem;
+     color: #fff;
+     line-height: 5rem;
+     padding-top: 4rem;
+ }

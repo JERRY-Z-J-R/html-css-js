@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>07-flex设置侧轴对齐方式（多行）</title>
+    <title>07-flex设置侧轴上的子元素排列方式（多行）</title>
     <style>
         div {
             display: flex;
@@ -17,14 +17,15 @@
             /* 因为有了换行，此时我们侧轴上控制子元素的对齐方式我们用 align-content */
             /* align-content: flex-start; */
             /* align-content: center; */
+            /* align-content: space-around; */
             /* align-content: space-between; */
-            align-content: space-around;
+            align-content: stretch;
         }
 
         div span {
             width: 150px;
             height: 100px;
-            background-color: purple;
+            background-color: gray;
             color: #fff;
             margin: 10px;
         }
@@ -39,6 +40,8 @@
         <span>4</span>
         <span>5</span>
         <span>6</span>
+        <span>7</span>
+        <span>8</span>
     </div>
 </body>
 

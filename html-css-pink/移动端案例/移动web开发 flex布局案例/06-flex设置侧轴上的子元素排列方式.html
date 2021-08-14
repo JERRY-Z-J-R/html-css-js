@@ -12,20 +12,18 @@
             width: 800px;
             height: 400px;
             background-color: pink;
-            /* 默认的主轴是 x 轴 row */
-            flex-direction: column;
+            /* 默认的主轴是 x轴 row */
+            flex-direction: row;
             justify-content: center;
-            /* 我们需要一个侧轴居中 */
-            /* 拉伸，但是子盒子不要给高度 */
-            /* align-items: stretch; */
-            align-items: center;
-            /* align-content: center; */
+            /* 设置侧轴：拉伸（默认） */
+            align-items: stretch;
         }
 
         div span {
             width: 150px;
-            height: 100px;
-            background-color: purple;
+            /* 拉伸的前提是没有指定高度 */
+            /* height: 100px; */
+            background-color: gray;
             color: #fff;
             margin: 10px;
         }

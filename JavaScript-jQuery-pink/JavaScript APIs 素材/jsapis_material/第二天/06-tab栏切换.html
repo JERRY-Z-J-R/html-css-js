@@ -11,22 +11,22 @@
             margin: 0;
             padding: 0;
         }
-        
+
         li {
             list-style-type: none;
         }
-        
+
         .tab {
             width: 978px;
             margin: 100px auto;
         }
-        
+
         .tab_list {
             height: 39px;
             border: 1px solid #ccc;
             background-color: #f1f1f1;
         }
-        
+
         .tab_list li {
             float: left;
             height: 39px;
@@ -35,16 +35,16 @@
             text-align: center;
             cursor: pointer;
         }
-        
+
         .tab_list .current {
             background-color: #c81623;
             color: #fff;
         }
-        
+
         .item_info {
             padding: 20px 0 0 20px;
         }
-        
+
         .item {
             display: none;
         }
@@ -78,7 +78,6 @@
             <div class="item">
                 手机社区模块内容
             </div>
-
         </div>
     </div>
     <script>
@@ -90,7 +89,7 @@
         for (var i = 0; i < lis.length; i++) {
             // 开始给5个小li 设置索引号 
             lis[i].setAttribute('index', i);
-            lis[i].onclick = function() {
+            lis[i].onclick = function () {
                 // 1. 上的模块选项卡，点击某一个，当前这一个底色会是红色，其余不变（排他思想） 修改类名的方式
 
                 // 干掉所有人 其余的li清除 class 这个类

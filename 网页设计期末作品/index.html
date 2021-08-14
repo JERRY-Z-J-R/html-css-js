@@ -6,42 +6,338 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Page-Enter" content="RevealTrans(duration=5,Transitionv=6)">
     <title>往后的岁月 - JERRY</title>
-    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/x-icon" href="images/jerryLogo.png" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/post-about.css">
+    <link rel="stylesheet" href="css/post-1.css">
+    <link rel="stylesheet" href="css/post-2.css">
+    <link rel="stylesheet" href="css/post-3.css">
+    <link rel="stylesheet" href="css/post-4.css">
+    <link rel="stylesheet" href="css/post-5.css">
+    <link rel="stylesheet" href="css/post-6.css">
+    <link rel="stylesheet" href="css/post-7.css">
+    <script src="./font/iconfont.js"></script>
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- 背景音乐 -->
+    <audio id="music" src="./music/桂程 - 老街.flac"></audio>
+    <!-- 主页 -->
     <div class="header">
-        <h1>"春风得意马蹄疾，一日看尽长安花"</h1>
+        <h1>《往后的岁月》</h1>
+        <h2>努力、坚守、开心、乐观 </h2>
+        <!-- readme -->
+        <div class="readme">
+            <img class="readme-img" src="./images/jerry.png" alt="Jerry-周吉瑞" title="单击查看个人账号">
+            <p>JERRY - <span>周吉瑞</span></p>
+            <img class="music-logo" src="./images/music.png" alt="music-logo" title="左键播放\右键切歌">
+        </div>
     </div>
+
     <div class="wrap">
-        <div class="card" style="background-image: url(images/bj.jpg);">
+        <div class="card card-1" style="background-image: url(images/bj1.jpg);">
             <h3>浪漫的全栈程序员</h3>
         </div>
-        <div class="card" style="background-image: url(images/bj.jpg);">
+        <div class="card card-2" style="background-image: url(images/bj2.jpg);">
             <h3>去梦想的城市走走</h3>
         </div>
-        <div class="card" style="background-image: url(images/bj.jpg);">
-            <h3>吉他弹唱一曲民谣</h3>
+        <div class="card card-3" style="background-image: url(images/bj3.jpg);">
+            <h3>吉他弹唱一曲粤语</h3>
         </div>
-        <div class="card active" style="background-image: url(images/bj.jpg);">
+        <div class="card card-4 active" style="background-image: url(images/bj4.jpg);">
             <h3>早睡早起身体健康</h3>
         </div>
-        <div class="card" style="background-image: url(images/bj.jpg);">
+        <div class="card card-5" style="background-image: url(images/bj5.jpg);">
             <h3>计算机协会冲冲冲</h3>
         </div>
-        <div class="card" style="background-image: url(images/bj.jpg);">
+        <div class="card card-6" style="background-image: url(images/bj6.jpg);">
             <h3>遇见我热爱的事业</h3>
         </div>
-        <div class="card" style="background-image: url(images/bj.jpg);">
+        <div class="card card-7" style="background-image: url(images/bj7.jpg);">
             <h3>独一无二的毕业吧</h3>
         </div>
     </div>
-    <div class="banner">
+
+    <div class="footer">
         <h4>很难说什么是办不到的事情，因为昨天的梦想可以是今天的希望，并且还可以成为明天的现实。</h4>
-        <h6>©2021 - 2023 By 周吉瑞 - I Love Cxtc</h6>
+        <h6>©2021 - 2023 By 周吉瑞 - I Love Cxtc.</h6>
     </div>
+    <!-- 主页结束 -->
+
+    <!-- 作者简介 -->
+    <div class="readmePage">
+        <h1>About Me</h1>
+        <img class="me" src="./images/readme.jpg" alt="周吉瑞">
+        <p>来自云南玉溪的小镇青年，深爱 Design 与 Coding，现实到要死的理想主义者。</p>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-qq"></use>
+        </svg>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-weixin"></use>
+        </svg>
+        <img class="qq" src="./images/qq.jpg" alt="QQ">
+        <img class="wx" src="./images/wx.jpg" alt="微信">
+    </div>
+    <!-- 作者简介结束 -->
+
+    <!-- 个人账号外链模块 -->
+    <div class="mylink">
+        <!-- iframe：文档内联框架 -->
+        <iframe src="./link.html" frameborder="0"></iframe>
+    </div>
+    <!-- 个人账号外链模块结束 -->
+
+    <!-- 交个朋友按钮 -->
+    <span class="jgpy" title="交个朋友">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-pengyouquan"></use>
+        </svg>
+    </span>
+    <!-- 交个朋友按钮结束 -->
+
+    <!-- 交个朋友模块 -->
+    <div class="friend">
+        <!-- iframe：文档内联框架 -->
+        <iframe class="iframeFriend" src="./friend.html" frameborder="0"></iframe>
+    </div>
+    <!-- 交个朋友模块结束 -->
+
+    <!-- 留一封信按钮 -->
+    <span class="lyfx" title="留一封信">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-xinxi"></use>
+        </svg>
+    </span>
+    <!-- 留一封信按钮结束 -->
+
+    <!-- 留一封信模块 -->
+    <div class="letter">
+        <!-- iframe：文档内联框架 -->
+        <iframe class="iframeFriend" src="./letter.html" frameborder="0"></iframe>
+    </div>
+    <!-- 留一封信模块结束 -->
+
+    <!-- 内容详情页 -->
+    <!-- 1 -->
+    <div class="pages post-1">
+        <img class="close-icon close-icon1" src="./images/close.png" alt="关闭">
+        <!-- 简介模块 -->
+        <div class="about-1">
+            <!-- 自动循环静音播放视频 -->
+            <video id="video1" src="./video/1-5.mp4" muted="muted" autoplay="autoplay" controls="controls"></video>
+            <!-- 显示播放控件 -->
+            <div class="musicPlayer1">
+                <img src="./images/post/logo/m1.png" alt="富士山下">
+                <div>
+                    <h1>富士山下</h1>
+                    <p>原唱：陈奕迅</p>
+                    <p>作词：林夕</p>
+                    <p>余超颖</p>
+                </div>
+            </div>
+        </div>
+        <!-- 文章模块 -->
+        <!-- iframe：文档内联框架 -->
+        <iframe class="article-1" src="./post/article-1.html" frameborder="0"></iframe>
+    </div>
+    <!-- end 1 -->
+
+    <!-- 2 -->
+    <div class="pages post-2">
+        <img class="close-icon close-icon2" src="./images/close.png" alt="关闭">
+        <!-- 简介模块 -->
+        <h1>去<br />梦<br />想<br />的<br />城<br />市<br />走<br />走</h1>
+        <div class="about-2">
+            <!-- 显示播放控件 -->
+            <div class="musicPlayer2">
+                <img src="./images/post/logo/m2.png" alt="老街">
+                <div>
+                    <h1>老街</h1>
+                    <p>原唱：李荣浩</p>
+                    <p>作词：李荣浩</p>
+                    <p>桂程</p>
+                </div>
+            </div>
+        </div>
+        <!-- 轮播图模块 -->
+        <div class="banner">
+            <ul class="banner_pic" id="banner_pic">
+                <li class="current"><img class="one" src="./images/post/more/bj.jpg" /></li>
+                <li class="pic"><img class="one" src="./images/post/more/sh.jpg" /></li>
+                <li class="pic"><img class="one" src="./images/post/more/xg.jpg" /></li>
+                <li class="pic"><img class="one" src="./images/post/more/ny.jpg" /></li>
+                <li class="pic"><img class="one" src="./images/post/more/dj.jpg" /></li>
+                <li class="pic"><img class="one" src="./images/post/more/ld.jpg" /></li>
+                <li class="pic"><img class="one" src="./images/post/more/bl.jpg" /></li>
+                <li class="pic"><img class="one" src="./images/post/more/jjs.jpg" /></li>
+                <li class="pic"><img class="one" src="./images/post/more/wns.jpg" /></li>
+            </ul>
+            <ol id="button">
+                <li class="current"></li>
+                <li class="but"></li>
+                <li class="but"></li>
+                <li class="but"></li>
+                <li class="but"></li>
+                <li class="but"></li>
+                <li class="but"></li>
+                <li class="but"></li>
+                <li class="but"></li>
+            </ol>
+        </div>
+    </div>
+    <!-- end 2 -->
+
+    <!-- 3 -->
+    <div class="pages post-3">
+        <img class="close-icon close-icon3" src="./images/close.png" alt="关闭">
+        <!-- 简介模块 -->
+        <div class="about-3">
+            <!-- 显示播放控件 -->
+            <div class="musicPlayer3">
+                <img src="./images/post/logo/m3.png" alt="谁愿放手">
+                <div>
+                    <h1>谁愿放手</h1>
+                    <p>原唱：陈慧琳</p>
+                    <p>作词：阮世生</p>
+                    <p>張子铭</p>
+                </div>
+            </div>
+            <h1>“吉他弹唱一曲粤语”</h1>
+        </div>
+        <!-- 播放器按钮 -->
+        <p>点击<br />切换</p>
+        <img class="player" src="./images/post/logo/wyy.png" alt="播放器" title="点击切换网易云音乐">
+        <!-- iframe：文档内联框架 -->
+        <iframe class="twoMusic" src="https://y.qq.com/n/ryqq/singer/003Nz2So3XXYek" frameborder="0"></iframe>
+    </div>
+    <!-- end 3 -->
+
+    <!-- 4 -->
+    <div class="pages post-4">
+        <img class="close-icon close-icon4" src="./images/close.png" alt="关闭">
+        <!-- 简介模块 -->
+        <div class="about-4">
+            <h1>早 身<br />睡 体<br />早 健<br />起 康</h1>
+            <!-- 显示播放控件 -->
+            <div class="musicPlayer4">
+                <img src="./images/post/logo/m4.png" alt="春夏秋冬">
+                <div>
+                    <h1>春夏秋冬</h1>
+                    <p>原唱：张国荣</p>
+                    <p>作词：林振强</p>
+                    <p>張子铭</p>
+                </div>
+            </div>
+        </div>
+        <!-- iframe：文档内联框架 -->
+        <iframe class="article-4" src="./post/article-4.html" frameborder="0"></iframe>
+    </div>
+    <!-- end 4 -->
+
+    <!-- 5 -->
+    <div class="pages post-5">
+        <img class="close-icon close-icon5" src="./images/close.png" alt="关闭">
+        <!-- 简介模块 -->
+        <div class="about-5">
+            <h1>计<br />算<br />机<br />协<br />会<br />冲<br />冲<br />冲</h1>
+            <!-- 自动循环静音播放视频 -->
+            <video id="video5" src="./video/5-1.mp4" muted="muted" autoplay="autoplay" controls="controls"></video>
+            <!-- 显示播放控件 -->
+            <div class="musicPlayer5">
+                <img src="./images/post/logo/m5.png" alt="风继续吹">
+                <div>
+                    <h1>风继续吹</h1>
+                    <p>原唱：张国荣</p>
+                    <p>作词：郑国江</p>
+                    <p>張子铭</p>
+                </div>
+            </div>
+        </div>
+        <!-- PDF模块 -->
+        <!-- <embed>：定义了一个容器，用来嵌入外部应用或者互动程序（插件） -->
+        <embed class="pdf" src="./pdf/计算机协会.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
+    </div>
+    <!-- end 5 -->
+
+    <!-- 6 -->
+    <div class="pages post-6">
+        <img class="close-icon close-icon6" src="./images/close.png" alt="关闭">
+        <!-- 简介模块 -->
+        <div class="about-6">
+            <h1>遇 见<br />我 热<br />爱 的<br />事 业</h1>
+            <!-- 显示播放控件 -->
+            <div class="musicPlayer6">
+                <img src="./images/post/logo/m6.png" alt="">
+                <div>
+                    <h1>一生中最爱</h1>
+                    <p>原唱：谭咏麟</p>
+                    <p>作词：向雪怀</p>
+                    <p>張子铭</p>
+                </div>
+            </div>
+        </div>
+        <!-- 播放器模块 -->
+        <div class="music"></div>
+        <!-- iframe：文档内联框架 -->
+        <iframe class="article-6" src="./post/article-6.html" frameborder="0"></iframe>
+    </div>
+    <!-- end 6 -->
+
+    <!-- 7 -->
+    <div class="pages post-7">
+        <img class="close-icon close-icon7" src="./images/close.png" alt="关闭">
+        <!-- 简介模块 -->
+        <div class="about-7">
+            <!-- 九宫格图片模块 -->
+            <div class="sudoku">
+                <div class="ccc hhh1"><img id="img1" src="./images/post/more/11.jpg" alt="毕业"></div>
+                <div class="ccc"><img id="img2" src="./images/post/more/22.jpg" alt="毕业"></div>
+                <div class="ccc hhh2"><img id="img3" src="./images/post/more/33.jpg" alt="毕业"></div>
+                <div><img id="img4" src="./images/post/more/44.jpg" alt="毕业"></div>
+                <div><img id="img5" src="./images/post/more/55.jpg" alt="毕业"></div>
+                <div><img id="img6" src="./images/post/more/66.jpg" alt="毕业"></div>
+                <div class="hhh3"><img id="img7" src="./images/post/more/77.jpg" alt="毕业"></div>
+                <div><img id="img8" src="./images/post/more/88.jpg" alt=""></div>
+                <div class="hhh4"><img id="img9" src="./images/post/more/99.jpg" alt="毕业"></div>
+            </div>
+            <!-- 显示播放控件 -->
+            <div class="musicPlayer7">
+                <img src="./images/post/logo/m7.png" alt="17岁">
+                <div>
+                    <h1>17岁</h1>
+                    <p>作曲：徐继宗</p>
+                    <p>作词：刘德华</p>
+                    <p>刘德华</p>
+                </div>
+            </div>
+        </div>
+        <!-- 文章模块 -->
+        <!-- iframe：文档内联框架 -->
+        <iframe class="article-7" src="./post/article-7.html" frameborder="0"></iframe>
+    </div>
+    <!-- end 7 -->
+    <!-- 图片放大显示模块 -->
+    <div class="bigImg">
+        <img id="imgBig" src="./images/post/more/1.jpeg" alt="毕业">
+    </div>
+    <!-- 内容详情页结束 -->
 </body>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/post-1.js"></script>
+<script type="text/javascript" src="js/post-2.js"></script>
+<script type="text/javascript" src="js/post-3.js"></script>
+<script type="text/javascript" src="js/post-4.js"></script>
+<script type="text/javascript" src="js/post-5.js"></script>
+<script type="text/javascript" src="js/post-6.js"></script>
+<script type="text/javascript" src="js/post-7.js"></script>
 
 </html>

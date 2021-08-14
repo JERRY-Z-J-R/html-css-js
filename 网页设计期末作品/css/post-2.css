@@ -1,0 +1,114 @@
+.post-2 {
+    /* 默认隐藏 */
+    display: none;
+}
+
+/* banner */
+.banner {
+    border-radius: 6.25rem;
+    width: 68.75rem;
+    height: 40.625rem;
+    position: relative;
+    margin: 0 auto;
+    top: 11%;
+    overflow: hidden;
+}
+
+.one {
+    /* 不变形、铺满图片 */
+    object-fit: cover;
+    position: absolute;
+    width: 68.75rem;
+    height: 40.625rem;
+    left: 50%;
+    top: 0;
+    margin-left: -550px;
+}
+
+.banner .banner_pic .pic {
+    display: none;
+}
+
+.banner .banner_pic .current {
+    display: block;
+}
+
+.banner ol {
+    position: absolute;
+    left: 23%;
+    top: 95%;
+    margin-left: -40px;
+}
+
+.banner ol .but {
+    float: left;
+    width: 54px;
+    height: 4px;
+    border: 1px solid #d6d6d6;
+    margin-right: 20px;
+}
+
+.banner ol li {
+    cursor: pointer;
+}
+
+.banner ol .current {
+    background: #90d1d5;
+    float: left;
+    width: 54px;
+    height: 5px;
+    border: 1px solid #90d1d5;
+    margin-right: 20px;
+}
+
+.post-2>h1 {
+    position: absolute;
+    left: 5%;
+    top: 14%;
+    font-family: '宋体';
+    font-size: 4rem;
+}
+
+.musicPlayer2 {
+    position: absolute;
+    right: 1%;
+    top: 18%;
+    width: 12%;
+    text-align: center;
+}
+
+.musicPlayer2>img {
+    margin-top: 50%;
+    width: 86%;
+    /* 播放旋转动画 */
+    -webkit-transform: rotate(360deg);
+
+    animation: rotation 6s linear infinite;
+
+    -moz-animation: rotation 6s linear infinite;
+
+    -webkit-animation: rotation 6s linear infinite;
+
+    -o-animation: rotation 6s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+
+}
+
+.musicPlayer2 h1 {
+    font-size: 3.2rem;
+    line-height: 6rem;
+}
+
+.musicPlayer2 p {
+    font-size: 1.3rem;
+}

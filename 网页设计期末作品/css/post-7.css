@@ -1,0 +1,148 @@
+.post-7 {
+    /* 默认隐藏 */
+    display: none;
+}
+
+.about-7 {
+    /* 相对定位：子绝父相 */
+    position: relative;
+    float: left;
+    width: 41%;
+    height: 100%;
+    border-radius: 6.25rem 0 0 6.25rem;
+}
+
+.article-7 {
+    float: right;
+    width: 58%;
+    height: 100%;
+    border-radius: 0 6.25rem 6.25rem 0;
+}
+
+.sudoku {
+    position: absolute;
+    top: 8%;
+    left: 14%;
+    width: 80%;
+    height: 59%;
+    border-radius: 6.25rem;
+}
+
+.sudoku>div {
+    float: left;
+    margin-left: .3rem;
+    margin-bottom: .3rem;
+    width: 32%;
+    height: 32%;
+    background-color: #000;
+    /* 图片溢出盒子裁切 */
+    overflow: hidden;
+    display: table-cell;
+    text-align: center;
+}
+
+.ccc {
+    margin-top: .3rem;
+}
+
+.hhh1 {
+    border-radius: 6rem 0 0 0;
+}
+
+.hhh2 {
+    border-radius: 0 6rem 0 0;
+}
+
+.hhh3 {
+    border-radius: 0 0 0 6rem;
+}
+
+.hhh4 {
+    border-radius: 0 0 6rem 0;
+}
+
+.sudoku img {
+    transition: all .4s;
+    height: 100%;
+}
+
+.sudoku img:hover {
+    transform: scale(1.1);
+}
+
+.musicPlayer7 {
+    position: absolute;
+    bottom: 5%;
+    left: 14%;
+    width: 81%;
+    height: 24%;
+}
+
+.musicPlayer7>img {
+    position: absolute;
+    left: 9%;
+    width: 38%;
+    /* 播放旋转动画 */
+    -webkit-transform: rotate(360deg);
+
+    animation: rotation 6s linear infinite;
+
+    -moz-animation: rotation 6s linear infinite;
+
+    -webkit-animation: rotation 6s linear infinite;
+
+    -o-animation: rotation 6s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+
+}
+
+.musicPlayer7>div {
+    position: absolute;
+    top: 1%;
+    right: 18%;
+    text-align: center;
+}
+
+.musicPlayer7>div>h1 {
+    line-height: 5rem;
+    font-size: 3.5rem;
+}
+
+.musicPlayer7>div>p {
+    font-size: 1.5rem;
+}
+
+.bigImg {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.bigImg>img {
+    position: absolute;
+    border-radius: 6.25rem;
+    /* 淡入、淡出动画 */
+    -webkit-animation-name: fadeIn2;
+    /* 动画名称 */
+    -webkit-animation-duration: 0.2s;
+    /* 动画持续时间 */
+    -webkit-animation-iteration-count: 1;
+    /* 动画次数 */
+    -webkit-animation-delay: 0s;
+    /* 延迟时间 */
+}

@@ -1,87 +1,475 @@
  * {
      margin: 0;
      padding: 0;
+     /* 令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中。
+     为元素设定的宽度和高度决定了元素的边框盒。 
+     就是说，为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。 
+     通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。 */
      box-sizing: border-box;
  }
 
  body {
+     /* 弹性布局 */
      display: flex;
      align-items: center;
      justify-content: center;
+     /* vh 视口单位：1vh等于视口高度的1% */
      height: 100vh;
-     background-color: rgb(0, 0, 0);
+     background-color: rgba(0, 0, 0);
  }
+
+ li {
+     list-style: none;
+ }
+
+ /* ----------------------------------------------------------- */
 
  .header {
      text-align: center;
-     color: white;
-     font-size: 1.5rem;
-     font-family: '宋体';
      position: fixed;
-     top: 8%;
+     top: 7%;
      margin: 0 auto;
      width: 100%;
-     height: 50px;
+     /* rem：根元素的字体大小 */
+     height: 3.125rem;
  }
 
+ .header h1 {
+     position: absolute;
+     top: -10%;
+     left: 12%;
+     color: white;
+     font-size: 3rem;
+     font-weight: 300;
+     font-family: '华文行楷';
+ }
+
+ .header h2 {
+     margin: 0 auto;
+     color: white;
+     font-size: 2rem;
+     font-family: '宋体';
+     overflow: hidden;
+     /* 让我们的文字强制一行内显示 */
+     white-space: nowrap;
+     /* steps 就是分几步来完成我们的动画 */
+     animation: w 4s steps(12) infinite;
+ }
+
+ @keyframes w {
+     0% {
+         width: 0;
+     }
+
+     100% {
+         width: 24.375rem;
+     }
+ }
+
+ /* ----------------------------------------------------------- */
+
+ .readme {
+     position: absolute;
+     top: -10%;
+     right: 12%;
+ }
+
+ .readme p {
+     float: left;
+     margin-left: 1.5rem;
+     color: rgb(255, 255, 255);
+     line-height: 3.375rem;
+     font-size: 1.8rem;
+     font-weight: 100;
+     font-family: 'Comic Sans MS', '幼圆';
+ }
+
+ .readme p span {
+     font-weight: 900;
+ }
+
+ .readme-img {
+     position: absolute;
+     right: 100%;
+     width: 3.5rem;
+     /* 动画过渡 */
+     transition: all .3s;
+ }
+
+ .readme-img:hover {
+     /* CSS3 2D 转换 scale 缩放 */
+     transform: scale(1.2);
+ }
+
+ .music-logo {
+     position: relative;
+     right: -0.5rem;
+     bottom: -0.6rem;
+     width: 2.5rem;
+
+ }
+
+ .music-play {
+     /* 播放旋转动画 */
+     -webkit-transform: rotate(360deg);
+
+     animation: rotation 3s linear infinite;
+
+     -moz-animation: rotation 3s linear infinite;
+
+     -webkit-animation: rotation 3s linear infinite;
+
+     -o-animation: rotation 3s linear infinite;
+ }
+
+ @-webkit-keyframes rotation {
+
+     from {
+         -webkit-transform: rotate(0deg);
+     }
+
+     to {
+         -webkit-transform: rotate(360deg);
+     }
+
+ }
+
+ /* ----------------------------------------------------------- */
+
  .wrap {
+     /* 弹性布局 */
      display: flex;
-     width: 90vw;
-     height: 32vw;
+     /* vw 视口单位：1vw等于视口宽度的1% */
+     width: 86vw;
  }
 
  .card {
      background-size: auto 100%;
      background-position: center;
      background-repeat: no-repeat;
-     border-radius: 50px;
+     /* 盒子圆角边框 */
+     border-radius: 3.125rem;
      color: rgb(255, 255, 255);
+     /* 通过弹性布局方式 改变每个盒子的收缩 */
      flex: 0.5;
+     /* 设定鼠标的形状为一只伸出食指的手 */
      cursor: pointer;
      height: 66vh;
      position: relative;
-     margin: 10px;
+     margin: .625rem;
+     /* 过渡效果，cubic-bezier()：贝塞尔曲线 */
      transition: flex 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
  }
 
  .card h3 {
-     font-size: 24px;
+     font-size: 1.375rem;
      position: absolute;
-     bottom: 20px;
-     left: 20px;
+     bottom: 1.25rem;
+     left: 1.25rem;
      margin: 0;
+     /* Opacity：设置一个元素了透明度级别 */
+     /* ease-in：规定以慢速开始的过渡效果 */
      transition: opacity 0s ease-in 0s;
  }
 
  .card.active {
      /* 通过弹性布局方式 改变每个盒子的收缩 */
      flex: 5;
+     box-shadow: 0 0 1rem .125rem rgb(255, 255, 255);
  }
 
  .card.active h3 {
      opacity: 1;
+     /* Opacity：设置一个元素了透明度级别 */
+     /* ease-in：规定以慢速开始的过渡效果 */
      transition: opacity 0.3s ease-in 0.4s;
  }
 
- .banner {
+ /* ----------------------------------------------------------- */
+
+ .footer {
+     /* 固定定位 */
+     position: fixed;
+     bottom: 6%;
      margin: 0 auto;
      width: 100%;
-     position: fixed;
-     bottom: 4%;
      text-align: center;
  }
 
- .banner h4 {
+ .footer h4 {
      color: rgb(255, 255, 255);
      font-family: '宋体';
      font-weight: 400;
      line-height: 2.4rem;
  }
 
- .banner h6 {
+ .footer h6 {
      color: rgb(255, 255, 255);
      font-weight: 400;
  }
+
+ /* ----------------------------------------------------------- */
+
+ /* 作者简介 */
+
+ .readmePage {
+     /* 默认隐藏 */
+     display: none;
+     /* 固定定位 */
+     position: fixed;
+     top: 15%;
+     right: 17.8%;
+     width: 25rem;
+     height: 40.625rem;
+     background-color: rgba(0, 0, 0, 0.8);
+     border-radius: 3.125rem;
+     /* 盒子阴影 */
+     box-shadow: 0 0 .9375rem .1875rem rgb(255, 255, 255);
+     text-align: center;
+     /* 淡入、淡出动画 */
+     -webkit-animation-name: fadeIn1;
+     /* 动画名称 */
+     -webkit-animation-duration: 0.4s;
+     /* 动画持续时间 */
+     -webkit-animation-iteration-count: 1;
+     /* 动画次数 */
+     -webkit-animation-delay: 0s;
+     /* 延迟时间 */
+ }
+
+ /* CSS3 淡入、淡出动画 */
+ @-webkit-keyframes fadeIn1 {
+     0% {
+         opacity: 0;
+         /* 初始状态 透明度为0 */
+         height: 0;
+         /* 初始状态 高为0 */
+     }
+
+     10% {
+         opacity: 0.1;
+         height: 0.1;
+     }
+
+     20% {
+         opacity: 0.2;
+         height: 0.2;
+     }
+
+     30% {
+         opacity: 0.3;
+         height: 0.3;
+     }
+
+     40% {
+         opacity: 0.4;
+         height: 0.4;
+     }
+
+     50% {
+         opacity: 0.5;
+         height: 0.5;
+     }
+
+     60% {
+         opacity: 0.6;
+         height: 0.6;
+     }
+
+     70% {
+         opacity: 0.7;
+         height: 0.7;
+     }
+
+     80% {
+         opacity: 0.8;
+         height: 0.8;
+     }
+
+     90% {
+         opacity: 0.9;
+         height: 0.9;
+     }
+
+     100% {
+         opacity: 1;
+         /* 结尾状态 透明度为1 */
+         height: 1;
+         /* 结尾状态 高为1 */
+     }
+ }
+
+ .readmePage h1 {
+     font-family: 'Comic Sans MS';
+     font-size: 2rem;
+     color: rgb(255, 255, 255);
+     line-height: 5rem;
+ }
+
+ .me {
+     width: 17.5rem;
+     border-radius: 1.5rem;
+ }
+
+ .readmePage p {
+     text-align: left;
+     text-indent: 2em;
+     padding: 1.5rem 1.875rem .9375rem 2.1rem;
+     font-size: 1.5rem;
+     color: white;
+     font-family: '宋体';
+ }
+
+ .icon {
+     font-size: 2.4rem;
+     margin: 0.3rem 3.8rem;
+ }
+
+ .qq {
+     width: 9rem;
+     margin: .5rem;
+ }
+
+ .wx {
+     width: 9rem;
+     margin: .5rem;
+ }
+
+ #music {
+     position: fixed;
+     bottom: 8%;
+     left: 10%;
+     z-index: 1;
+ }
+
+ /* 作者简介结束 */
+
+ /* 个人账号外链模块 */
+ .mylink {
+     /* 默认隐藏 */
+     display: none;
+     /* 固定定位 */
+     position: fixed;
+     top: 18%;
+     right: 22.5%;
+     width: 15rem;
+     height: 28rem;
+     border-radius: 3.125rem;
+     background-color: rgba(0, 0, 0, 0);
+     /* 盒子阴影 */
+     box-shadow: 0 0 .9375rem .1875rem rgb(255, 255, 255);
+     text-align: center;
+     /* 淡入、淡出动画 */
+     -webkit-animation-name: fadeIn3;
+     /* 动画名称 */
+     -webkit-animation-duration: 0.4s;
+     /* 动画持续时间 */
+     -webkit-animation-iteration-count: 1;
+     /* 动画次数 */
+     -webkit-animation-delay: 0s;
+     /* 延迟时间 */
+ }
+
+ .mylink>iframe {
+     width: 100%;
+     height: 100%;
+     border-radius: 3.125rem;
+ }
+
+ /* 个人账号外链模块结束 */
+
+ /* 交个朋友、留一封信按钮 */
+ .jgpy {
+     position: fixed;
+     bottom: 7.5%;
+     left: 21%;
+     color: #fff;
+     /* 动画过渡 */
+     transition: all .3s;
+ }
+
+ .lyfx {
+     position: fixed;
+     bottom: 7.5%;
+     right: 21%;
+     color: #fff;
+     /* 动画过渡 */
+     transition: all .3s;
+ }
+
+ .jgpy:hover {
+     /* CSS3 2D 转换 scale 缩放 */
+     transform: scale(1.2);
+ }
+
+ .lyfx:hover {
+     /* CSS3 2D 转换 scale 缩放 */
+     transform: scale(1.2);
+ }
+
+ /* 交个朋友、留一封信按钮结束 */
+
+ /* 交个朋友模块 */
+ .friend {
+     display: none;
+     position: fixed;
+     bottom: 15%;
+     left: 10%;
+     width: 35rem;
+     height: 38rem;
+     background-color: rgba(0, 0, 0, 0);
+     border-radius: 3.125rem;
+     box-shadow: 0 0 .9375rem .1875rem rgb(255, 255, 255);
+     /* 淡入、淡出动画 */
+     -webkit-animation-name: fadeIn3;
+     /* 动画名称 */
+     -webkit-animation-duration: 0.4s;
+     /* 动画持续时间 */
+     -webkit-animation-iteration-count: 1;
+     /* 动画次数 */
+     -webkit-animation-delay: 0s;
+     /* 延迟时间 */
+ }
+
+ .friend>iframe {
+     width: 100%;
+     height: 100%;
+     border-radius: 3.125rem;
+ }
+
+ /* 交个朋友模块结束 */
+
+ /* 留一封信模块 */
+ .letter {
+     display: none;
+     position: fixed;
+     bottom: 15%;
+     right: 10%;
+     width: 35rem;
+     height: 38rem;
+     background-color: rgba(0, 0, 0, 0);
+     border-radius: 3.125rem;
+     box-shadow: 0 0 .9375rem .1875rem rgb(255, 255, 255);
+     /* 淡入、淡出动画 */
+     -webkit-animation-name: fadeIn3;
+     /* 动画名称 */
+     -webkit-animation-duration: 0.4s;
+     /* 动画持续时间 */
+     -webkit-animation-iteration-count: 1;
+     /* 动画次数 */
+     -webkit-animation-delay: 0s;
+     /* 延迟时间 */
+ }
+
+ .letter>iframe {
+     width: 100%;
+     height: 100%;
+     border-radius: 3.125rem;
+ }
+
+ /* 留一封信模块结束 */
+
+ /* ----------------------------------------------------------- */
 
  /* CSS3 @media 查询，针对不同的媒体类型定义不同的样式。
     @media 可以针对不同的屏幕尺寸设置不同的样式，
@@ -89,7 +477,7 @@
     当重置浏览器大小的过程中，页面会根据浏览器的宽度和高度重新渲染页面。
  */
  /* 定义输出设备中的页面最大可见区域宽度为500px。 */
- @media (max-width: 500px) {
+ @media (max-width: 31.25rem) {
      .wrap {
          width: 100vw;
      }

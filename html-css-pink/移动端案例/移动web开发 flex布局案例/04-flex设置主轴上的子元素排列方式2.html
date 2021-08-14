@@ -12,16 +12,25 @@
             width: 800px;
             height: 400px;
             background-color: pink;
-            /* 我们现在的主轴是y轴 */
+            /* 我们现在的主轴是 y轴 */
             flex-direction: column;
+            /* justify-content: 是设置主轴上子元素的排列方式 */
+            /* 从头部开始，则从上到下（默认值） */
+            /* justify-content: flex-start; */
+            /* 从下开始排列 */
+            /* justify-content: flex-end; */
+            /* 让我们子元素垂直居中对齐 */
             /* justify-content: center; */
+            /* 平分剩余空间 */
+            /* justify-content: space-around; */
+            /* 先上下两边贴边，在分配剩余的空间 */
             justify-content: space-between;
         }
 
         div span {
             width: 150px;
             height: 100px;
-            background-color: purple;
+            background-color: gray;
         }
     </style>
 </head>

@@ -14,7 +14,7 @@ a {
   font-size: 0.333333rem;
 }
 
-/* 这个插件默认的html文字大小 cssroot  16px */
+/* cssrem 插件默认的 html 文字大小 cssroot  16px */
 
 /* 
 img {
@@ -25,7 +25,7 @@ img {
     height: 1rem;
 } */
 
-/* 如果我们的屏幕超过了 750px  那么我们就按照 750设计稿来走 不会让我们页面超过750px */
+/* 如果我们的屏幕超过了 750px  那么我们就按照 750 设计稿来走 不会让我们页面超过 750px */
 
 @media screen and (min-width: 750px) {
   html {

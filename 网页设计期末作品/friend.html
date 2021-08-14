@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交个朋友</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            font-family: '幼圆';
+        }
+
+        .friendMain {
+            width: 30rem;
+            margin: 3% auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            line-height: 5rem;
+        }
+
+        .tdl {
+            width: 5rem;
+            font-size: 2rem;
+        }
+
+        .tdr {
+            text-align: left;
+        }
+
+        input {
+            border-radius: 3.125rem;
+            outline: none;
+        }
+
+        .sub {
+            width: 100%;
+            height: 54px;
+            border-radius: 3.125rem;
+            border-width: 4px;
+            border-color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .sub:hover {
+            border-color: rgb(0, 255, 255);
+        }
+
+        .in {
+            width: 110%;
+            height: 2rem;
+            border-radius: 3.125rem;
+            border-width: 1px;
+            border-color: white;
+            font-size: 1rem;
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="friendMain">
+        <!-- 标题 -->
+        <h1>《交个朋友》</h1>
+
+        <!-- 表单域 -->
+        <form action="" method="POST" name="friendTable">
+
+            <table cellspacing="20" cellpadding="10">
+                <tr>
+                    <td class="tdl">姓名</td>
+                    <td class="tdr">
+                        <input class="in" type="text" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tdl">性别</td>
+                    <td class="tdr">
+                        <input class="inFont" type="radio" name="sex" id="man" /><label for="man"
+                            style="font-size: 1.5rem;">
+                            男</label>
+                        <input class="inFont" type="radio" name="sex" id="women" /><label for="women"
+                            style="font-size: 1.5rem;"> 女</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tdl">生日</td>
+                    <td class="tdr">
+                        <input class="in" type="date" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tdl">位置</td>
+                    <td class="tdr">
+                        <input class="in" type="text" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tdl">喜好</td>
+                    <td class="tdr">
+                        <input class="inFont" type="checkbox" name="love" /> 后端
+                        <input class="inFont" type="checkbox" name="love" /> 前端
+                        <input class="inFont" type="checkbox" name="love" /> UI设计
+                        <input class="inFont" type="checkbox" name="love" /> 产品设计
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tdl">网址</td>
+                    <td class="tdr">
+                        <input class="in" type="url" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tdl">邮箱</td>
+                    <td class="tdr">
+                        <input class="in" type="email" required />
+                    </td>
+                </tr>
+            </table>
+            <input class="sub" type="submit" value="发送给 JERRY" />
+        </form>
+    </div>
+</body>
+
+</html>

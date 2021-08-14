@@ -1,0 +1,72 @@
+.post-6 {
+    /* 默认隐藏 */
+    display: none;
+}
+
+.about-6 {
+    position: relative;
+    width: 24%;
+    height: 100%;
+    border-radius: 6.25rem 0 0 6.25rem;
+}
+
+.about-6>h1 {
+    position: absolute;
+    top: 8%;
+    left: 30%;
+    font-size: 3.6rem;
+    font-family: '宋体';
+}
+
+.musicPlayer6 {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+}
+
+.musicPlayer6>img {
+    margin-top: 50%;
+    width: 66%;
+    /* 播放旋转动画 */
+    -webkit-transform: rotate(360deg);
+
+    animation: rotation 6s linear infinite;
+
+    -moz-animation: rotation 6s linear infinite;
+
+    -webkit-animation: rotation 6s linear infinite;
+
+    -o-animation: rotation 6s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+
+}
+
+.musicPlayer6 h1 {
+    font-size: 3.2rem;
+    line-height: 6rem;
+}
+
+.musicPlayer6 p {
+    font-size: 1.3rem;
+}
+
+.article-6 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    border-radius: 0 6.25rem 6.25rem 0;
+}

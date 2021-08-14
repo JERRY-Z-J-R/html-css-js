@@ -84,6 +84,8 @@ div {
 
 .app ul li:nth-child(2) img {
   width: 30px;
+  /* 图片默认和文字的底线对齐，此处设置图片与文字居中对齐 */
+  /* 这样的话，通过对文字设置行高的方式，就也可以实现图片的垂直居中对齐 */
   vertical-align: middle;
 }
 

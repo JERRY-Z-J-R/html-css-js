@@ -1,0 +1,82 @@
+.post-1 {
+    /* 默认隐藏 */
+    display: none;
+}
+
+.about-1 {
+    /* 相对定位：子绝父相 */
+    position: relative;
+    float: left;
+    width: 41%;
+    height: 100%;
+    border-radius: 6.25rem 0 0 6.25rem;
+}
+
+.article-1 {
+    float: right;
+    width: 58%;
+    height: 100%;
+    border-radius: 0 6.25rem 6.25rem 0;
+}
+
+.about-1>video {
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    width: 95%;
+    border-radius: 2.5rem;
+}
+
+.musicPlayer1 {
+    /* background-color: #fff; */
+    position: absolute;
+    width: 94%;
+    height: 30%;
+    bottom: 10%;
+    left: 6%;
+}
+
+.musicPlayer1>img {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 40%;
+    /* 播放旋转动画 */
+    -webkit-transform: rotate(360deg);
+
+    animation: rotation 6s linear infinite;
+
+    -moz-animation: rotation 6s linear infinite;
+
+    -webkit-animation: rotation 6s linear infinite;
+
+    -o-animation: rotation 6s linear infinite;
+}
+
+.musicPlayer1>div {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    text-align: center;
+}
+
+.musicPlayer1>div>h1 {
+    line-height: 5rem;
+    font-size: 3.375rem;
+}
+
+.musicPlayer1>div>p {
+    font-size: 1.5rem;
+}
+
+@-webkit-keyframes rotation {
+
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+
+}
